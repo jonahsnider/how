@@ -2,9 +2,12 @@
 import execa from 'execa';
 import fs from 'fs/promises';
 import {homedir} from 'os';
-import path from 'path';
+import path, {dirname} from 'path';
 import {stdout} from 'process';
+import {fileURLToPath} from 'url';
 import {format} from './format.js';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const tldrPath = path.join(homedir(), '.cache', 'how', 'tldr');
 
@@ -44,7 +47,7 @@ for (const potentialPath of potentialPaths) {
 	const contents = await fs.readFile(potentialPath, 'utf-8');
 	const formatted = format(contents);
 
-	const tldr = await execa('./lib/glow-1.3.0', ['-s', 'dark', '-'], {
+	const tldr = await execa(path.join(__dirname, '..', 'lib', 'glow-1.3.0'), ['-s', 'dark', '-'], {
 		input: formatted
 	});
 
