@@ -1,10 +1,33 @@
-# [TypeScript](https://www.typescriptlang.org) Starter
+# How
 
-[![Build Status](https://github.com/pizzafox/typescript-starter/workflows/CI/badge.svg)](https://github.com/pizzafox/typescript-starter/actions)
+[![Build Status](https://github.com/pizzafox/how/workflows/CI/badge.svg)](https://github.com/pizzafox/how/actions)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
-[![codecov](https://codecov.io/gh/pizzafox/typescript-starter/branch/master/graph/badge.svg)](https://codecov.io/gh/pizzafox/typescript-starter)
 
-My personal TypeScript starter template.
+Learn how to use CLI apps.
+
+## Usage
+
+Install using your favorite Node.js package manager:
+
+```sh
+npm i -g @pizzafox/how
+yarn global add @pizzafox/how
+pnpm i -g add @pizzafox/how
+```
+
+Make sure you're using Linux with an AMD64 CPU and also a recent version of Node.js (something that can run modules natively).
+
+```sh
+how <app>
+```
+
+### Example
+
+Learn how to use `tar`:
+
+```sh
+how tar
+```
 
 ## Contributing
 
@@ -35,23 +58,9 @@ yarn run style
 
 ### Linting
 
-This project uses [XO](https://github.com/xojs/xo) (which uses [ESLint](https://eslint.org) and some plugins internally) to perform static analysis of the source code.
-It reports issues like unused variables or not following best practices to ensure the project is well-written.
-
-```sh
-yarn run lint
-```
+There is intentionally no lint script.
+Contributors are expected to write flawless code.
 
 ### Testing
 
-Unit tests are stored alongside source files (ex. `config.ts` would have `config.test.ts`).
-You can run the tests with the `test` script:
-
-```sh
-yarn run test
-```
-
-#### Coverage
-
-This will generate a `coverage` folder which has a breakdown of coverage of the project.
-The CI will upload the coverage information to [CodeCov](https://codecov.io) which can be [viewed here](https://codecov.io/gh/pizzafox/typescript-starter).
+There are no unit tests for the same reason there is no lint script.
