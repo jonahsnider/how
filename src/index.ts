@@ -11,12 +11,12 @@ try {
 	await fs.access(tldrPath);
 } catch (error) {
 	await fs.mkdir(tldrPath, {recursive: true});
-	await execa(`git`, ['clone', 'https://github.com/tldr-pages/tldr.git', tldrPath]);
+	await execa('git', ['clone', 'https://github.com/tldr-pages/tldr.git', tldrPath]);
 }
 
 if (Math.random() > 0.95) {
 	try {
-		await execa(`git`, ['pull'], {cwd: tldrPath});
+		await execa('git', ['pull'], {cwd: tldrPath});
 		console.error('you got unlucky and the cache was refreshed');
 	} catch (error) {
 		console.error('failed to refresh cache');
