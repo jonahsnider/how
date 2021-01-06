@@ -1,4 +1,4 @@
-const examples = /`(.*)`/gm;
+const examples = /^`(.*)`/gm;
 const exampleHeadings = /^- (.*)/gm;
 const doubleBrackets = /{{|}}/g;
 
