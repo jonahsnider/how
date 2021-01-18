@@ -1,29 +1,43 @@
 #!/usr/bin/env node
 import execa from 'execa';
 import fs from 'fs/promises';
-import {homedir} from 'os';
-import path, {dirname} from 'path';
+import path from 'path';
 import {stdout} from 'process';
-import {fileURLToPath} from 'url';
+import {getOsKind, resolveVersion, updateGlow} from './fetch-glow.js';
 import {format} from './format.js';
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
-const tldrPath = path.join(homedir(), '.cache', 'how', 'tldr');
+import {desiredGlowVersion, options} from './options.js';
+import {glowPath, tldrPath} from './paths.js';
 
 try {
 	await fs.access(tldrPath);
 } catch (error) {
 	await fs.mkdir(tldrPath, {recursive: true});
 	await execa('git', ['clone', 'https://github.com/tldr-pages/tldr.git', tldrPath]);
+	console.log('downloaded the database of Markdown examples');
+}
+
+if (options.glowVersion !== desiredGlowVersion) {
+	// Currently installed version is not the same as the desired version
+
+	const osKind = getOsKind();
+	const version = resolveVersion(osKind);
+
+	try {
+		await updateGlow(version);
+
+		console.log('downloaded a new binary for Glow (makes Markdown pretty)');
+	} catch (error) {
+		console.error('failed to download a new binary for Glow (makes Markdown pretty)');
+		process.exit(1);
+	}
 }
 
 if (Math.random() > 0.95) {
 	try {
 		await execa('git', ['pull'], {cwd: tldrPath});
-		console.error('you got unlucky and the cache was refreshed');
+		console.log('you got unlucky and the cache for the Markdown database was refreshed');
 	} catch (error) {
-		console.error('failed to refresh cache');
+		console.error('failed to refresh the cache for the Markdown database');
 	}
 }
 
@@ -47,7 +61,7 @@ for (const potentialPath of potentialPaths) {
 	const contents = await fs.readFile(potentialPath, 'utf-8');
 	const formatted = format(contents);
 
-	const tldr = await execa(path.join(__dirname, '..', 'lib', 'glow-1.3.0'), ['-s', 'dark', '-'], {
+	const tldr = await execa(glowPath, ['-s', 'dark', '-'], {
 		input: formatted
 	});
 
