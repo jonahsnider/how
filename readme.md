@@ -15,7 +15,7 @@ yarn global add @pizzafox/how
 pnpm i -g add @pizzafox/how
 ```
 
-Make sure you're using Linux with an AMD64 CPU and also a recent version of Node.js (something that can run modules natively).
+Make sure you're using Linux and also a recent version of Node.js (something that can run modules natively).
 
 ```sh
 how <app>
