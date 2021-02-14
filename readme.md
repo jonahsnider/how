@@ -15,7 +15,15 @@ yarn global add @pizzafox/how
 pnpm i -g add @pizzafox/how
 ```
 
-Make sure you're using Linux and also a recent version of Node.js (something that can run modules natively).
+You can also use `npx` when in a pinch, but a global install is preferred:
+
+```sh
+npx @pizzafox/how <app>
+pnpx @pizzafox/how <app>
+```
+
+A common-ish CPU & OS as well as a recent version of Node.js (something that can run modules natively) are required to run how.
+Your package manager should prevent you from installing how if your system is incompatible.
 
 ```sh
 how <app>
