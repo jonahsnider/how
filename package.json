@@ -56,6 +56,6 @@
 	"dependencies": {
 		"decompress": "4.2.1",
 		"execa": "5.0.0",
-		"got": "11.8.1"
+		"got": "11.8.2"
 	}
 }
