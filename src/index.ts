@@ -3,10 +3,13 @@ import execa from 'execa';
 import fs from 'fs/promises';
 import path from 'path';
 import {stdout} from 'process';
+import updateNotifier from 'update-notifier';
 import {getOsKind, resolveVersion, updateGlow} from './fetch-glow.js';
 import {format} from './format.js';
 import {desiredGlowVersion, options} from './options.js';
-import {glowPath, tldrPath} from './paths.js';
+import {glowPath, tldrPath, __dirname} from './paths.js';
+
+updateNotifier({pkg: JSON.parse(await fs.readFile(path.join(__dirname, '..', 'package.json'), 'utf-8'))}).notify();
 
 try {
 	await fs.access(tldrPath);
