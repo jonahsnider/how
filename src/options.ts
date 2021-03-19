@@ -13,7 +13,7 @@ export interface Options {
  * The desired version of Glow to download locally.
  * @see https://github.com/charmbracelet/glow/releases
  */
-export const desiredGlowVersion = '1.3.0';
+export const desiredGlowVersion = '1.4.0';
 
 export const defaultOptions: Options = {
 	glowVersion: null,
