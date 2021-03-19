@@ -207,9 +207,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@pizzafox/how@workspace:."
   dependencies:
+    "@pizzafox/util": 2.7.0
     "@types/decompress": 4.2.3
     "@types/node": 14.14.35
     "@types/update-notifier": 5.0.0
+    convert: 1.8.1
     decompress: 4.2.1
     execa: 5.0.0
     got: 11.8.2
@@ -223,6 +225,13 @@ __metadata:
     how: ./tsc_output/index.js
   languageName: unknown
   linkType: soft
+
+"@pizzafox/util@npm:2.7.0":
+  version: 2.7.0
+  resolution: "@pizzafox/util@npm:2.7.0"
+  checksum: abe0c96f19f8d0149359e20cf21323c6e05757046880f84c4968cde53443a84bb8da693d97ba313bec9ec342d72cf0b747454f1d8f7bf9a9b6cdaebecf58be0b
+  languageName: node
+  linkType: hard
 
 "@semantic-release/commit-analyzer@npm:^8.0.0":
   version: 8.0.1
@@ -1462,6 +1471,13 @@ __metadata:
   bin:
     conventional-commits-parser: cli.js
   checksum: d531b2a076cbdb73e1c4dfd27d9e4eab5259173c69b8fb05a24e45e2af631dfd51f379f873b77d28c70db205632835ae7293b7b2fb2d5a7f106fcb24779a5a79
+  languageName: node
+  linkType: hard
+
+"convert@npm:1.8.1":
+  version: 1.8.1
+  resolution: "convert@npm:1.8.1"
+  checksum: f7a59414f2153901e3dc78fde2a7c62fd6f60bea1240bf670ca1d48de2f120766a4ad82cb1e167acc899d0673d5b40e36ad1ec0e61fdc023f5af2fcd1d8e8a18
   languageName: node
   linkType: hard
 

@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+import {Stopwatch} from '@pizzafox/util';
+import {convert} from 'convert';
 import execa from 'execa';
 import fs from 'fs/promises';
 import path from 'path';
@@ -26,21 +28,28 @@ if (options.glowVersion !== desiredGlowVersion) {
 	const version = resolveVersion(osKind);
 
 	try {
+		const stopwatch = Stopwatch.start();
 		await updateGlow(version);
+		console.log(convert);
 
-		console.log('downloaded a new binary for Glow (makes Markdown pretty)');
+		const duration = convert(stopwatch.end()).from('ms').to('s').toFixed(2);
+
+		console.log(`downloaded a new binary for Glow (makes Markdown pretty, took ${duration}s)`);
 	} catch (error) {
-		console.error('failed to download a new binary for Glow (makes Markdown pretty)');
+		console.error('failed to download a new binary for Glow (makes Markdown pretty)', error);
 		process.exit(1);
 	}
 }
 
 if (Math.random() > 0.95) {
 	try {
+		const stopwatch = Stopwatch.start();
 		await execa('git', ['pull'], {cwd: tldrPath});
-		console.log('you got unlucky and the cache for the Markdown database was refreshed');
+		const duration = convert(stopwatch.end()).from('ms').to('s').toFixed(2);
+
+		console.log(`you got unlucky and the cache for the Markdown database was refreshed (took ${duration}s)`);
 	} catch (error) {
-		console.error('failed to refresh the cache for the Markdown database');
+		console.error('failed to refresh the cache for the Markdown database', error);
 	}
 }
 
