@@ -30,7 +30,6 @@ if (options.glowVersion !== desiredGlowVersion) {
 	try {
 		const stopwatch = Stopwatch.start();
 		await updateGlow(version);
-		console.log(convert);
 
 		const duration = convert(stopwatch.end()).from('ms').to('s').toFixed(2);
 
