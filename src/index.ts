@@ -45,14 +45,16 @@ if (Math.random() > 0.95) {
 }
 
 const command = process.argv[process.argv.length - 1];
-
-// Command was probably a path (ex. '/home/jonah/programming/how/tsc_output')
-if (command.includes(path.sep)) {
-	console.error('no program');
-	process.exit(1);
-}
-
 const potentialPaths = ['common', 'linux'].map(dir => path.join(tldrPath, 'pages', dir, `${command}.md`));
+
+if (
+	// Command was probably a path (ex. '/home/jonah/programming/how/tsc_output')
+	command.includes(path.sep) ||
+	// Command is this program
+	command === 'how'
+) {
+	potentialPaths.unshift(path.join(__dirname, '..', 'docs', 'how.md'));
+}
 
 for (const potentialPath of potentialPaths) {
 	try {
