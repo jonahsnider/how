@@ -57,7 +57,7 @@
 	"version": "0.0.0-development",
 	"dependencies": {
 		"@pizzafox/util": "2.7.0",
-		"convert": "1.8.1",
+		"convert": "1.8.2",
 		"decompress": "4.2.1",
 		"execa": "5.0.0",
 		"got": "11.8.2",
