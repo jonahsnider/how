@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import {Stopwatch} from '@pizzafox/util';
+import {Stopwatch} from '@jonahsnider/util';
 import {convert} from 'convert';
 import execa from 'execa';
 import fs from 'fs/promises';

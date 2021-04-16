@@ -1,6 +1,6 @@
 # How
 
-[![Build Status](https://github.com/pizzafox/how/workflows/CI/badge.svg)](https://github.com/pizzafox/how/actions)
+[![Build Status](https://github.com/jonahsnider/how/workflows/CI/badge.svg)](https://github.com/jonahsnider/how/actions)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
 Learn how to use CLI apps.
@@ -10,16 +10,16 @@ Learn how to use CLI apps.
 Install using your favorite Node.js package manager:
 
 ```sh
-npm i -g @pizzafox/how
-yarn global add @pizzafox/how
-pnpm i -g add @pizzafox/how
+npm i -g @jonahsnider/how
+yarn global add @jonahsnider/how
+pnpm i -g add @jonahsnider/how
 ```
 
 You can also use `npx` when in a pinch, but a global install is preferred:
 
 ```sh
-npx @pizzafox/how <app>
-pnpx @pizzafox/how <app>
+npx @jonahsnider/how <app>
+pnpx @jonahsnider/how <app>
 ```
 
 A common-ish CPU & OS as well as a recent version of Node.js (something that can run modules natively) are required to run how.

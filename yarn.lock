@@ -43,6 +43,36 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jonahsnider/how@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@jonahsnider/how@workspace:."
+  dependencies:
+    "@jonahsnider/util": 2.9.1
+    "@types/decompress": 4.2.3
+    "@types/node": 14.14.37
+    "@types/update-notifier": 5.0.0
+    convert: 1.8.2
+    decompress: 4.2.1
+    execa: 5.0.0
+    got: 11.8.2
+    prettier: 2.2.1
+    prettier-config-xo: 1.0.3
+    semantic-release: 17.4.2
+    ts-node: 9.1.1
+    typescript: 4.2.4
+    update-notifier: 5.1.0
+  bin:
+    how: ./tsc_output/index.js
+  languageName: unknown
+  linkType: soft
+
+"@jonahsnider/util@npm:2.9.1":
+  version: 2.9.1
+  resolution: "@jonahsnider/util@npm:2.9.1"
+  checksum: 79191f75a9d0c734be6f75efc7d675e611e2a3aabcdd28d13b6bf07524ecb24bdcbf652c4a45e95ae14b592f58545f61a0e1e0903d6bec2bf5c46c213af9c565
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.4":
   version: 2.1.4
   resolution: "@nodelib/fs.scandir@npm:2.1.4"
@@ -200,36 +230,6 @@ __metadata:
     "@octokit/openapi-types": ^2.0.1
     "@types/node": ">= 8"
   checksum: a8bad12aa859f6b0a2160d84e95f98749c7f9074aec4505ce80822ef025ff97bf9d942bbe817d78142b99a1d6b18c7ce7ac15bcd16d223143d5b6960bc7de851
-  languageName: node
-  linkType: hard
-
-"@pizzafox/how@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@pizzafox/how@workspace:."
-  dependencies:
-    "@pizzafox/util": 2.8.0
-    "@types/decompress": 4.2.3
-    "@types/node": 14.14.37
-    "@types/update-notifier": 5.0.0
-    convert: 1.8.2
-    decompress: 4.2.1
-    execa: 5.0.0
-    got: 11.8.2
-    prettier: 2.2.1
-    prettier-config-xo: 1.0.3
-    semantic-release: 17.4.2
-    ts-node: 9.1.1
-    typescript: 4.2.4
-    update-notifier: 5.1.0
-  bin:
-    how: ./tsc_output/index.js
-  languageName: unknown
-  linkType: soft
-
-"@pizzafox/util@npm:2.8.0":
-  version: 2.8.0
-  resolution: "@pizzafox/util@npm:2.8.0"
-  checksum: 9d7f29e32e67d1fb6a458a80b1717162606154f8596726c98da16ffd208809d1efc8c404d0e66ac5ac49a9fe57ad25b8b0e626a6843d6dcc7a1005d12dda8fbc
   languageName: node
   linkType: hard
 

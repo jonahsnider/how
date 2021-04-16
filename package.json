@@ -6,7 +6,7 @@
 	},
 	"description": "Learn how to use CLI apps.",
 	"bugs": {
-		"url": "https://github.com/pizzafox/how/issues"
+		"url": "https://github.com/jonahsnider/how/issues"
 	},
 	"devDependencies": {
 		"@types/decompress": "4.2.3",
@@ -25,13 +25,13 @@
 	"bin": "./tsc_output/index.js",
 	"license": "Apache-2.0",
 	"main": "./tsc_output/index.js",
-	"name": "@pizzafox/how",
+	"name": "@jonahsnider/how",
 	"publishConfig": {
 		"access": "public"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/pizzafox/how.git"
+		"url": "git+https://github.com/jonahsnider/how.git"
 	},
 	"type": "module",
 	"scripts": {
@@ -56,7 +56,7 @@
 	},
 	"version": "0.0.0-development",
 	"dependencies": {
-		"@pizzafox/util": "2.8.0",
+		"@jonahsnider/util": "2.9.1",
 		"convert": "1.8.2",
 		"decompress": "4.2.1",
 		"execa": "5.0.0",
