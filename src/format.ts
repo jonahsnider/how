@@ -11,5 +11,6 @@ $1
 \`\`\``
 		)
 		.replaceAll(exampleHeadings, '## $1')
-		.replaceAll(doubleBrackets, '');
+		.replaceAll(doubleBrackets, '')
+		.trimStart();
 }
