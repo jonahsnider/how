@@ -3,6 +3,7 @@ import {Stopwatch} from '@jonahsnider/util';
 import {convert} from 'convert';
 import execa from 'execa';
 import fs from 'fs/promises';
+import os from 'os';
 import path from 'path';
 import {stdout} from 'process';
 import updateNotifier from 'update-notifier';
@@ -53,7 +54,28 @@ if (Math.random() > 0.95) {
 }
 
 const command = process.argv[process.argv.length - 1];
-const potentialPaths = ['common', 'linux'].map(dir => path.join(tldrPath, 'pages', dir, `${command}.md`));
+const categories = ['common', 'linux'];
+
+switch (os.platform()) {
+	case 'darwin':
+		categories.unshift('osx');
+		break;
+	case 'cygwin':
+	case 'win32':
+		categories.unshift('windows');
+		break;
+	case 'sunos':
+		console.log('how are you even running node on sunos???');
+		categories.unshift('sunos');
+		break;
+	case 'android':
+		categories.unshift('android');
+		break;
+	default:
+		break;
+}
+
+const potentialPaths = categories.map(dir => path.join(tldrPath, 'pages', dir, `${command}.md`));
 
 if (
 	// Command was probably a path (ex. '/home/jonah/programming/how/tsc_output')
