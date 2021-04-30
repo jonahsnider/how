@@ -52,7 +52,7 @@
 		"x64"
 	],
 	"engines": {
-		"node": ">=14.0.0"
+		"node": ">=15.0.0"
 	},
 	"version": "0.0.0-development",
 	"dependencies": {
