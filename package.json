@@ -14,7 +14,7 @@
 		"@types/update-notifier": "5.0.0",
 		"prettier": "2.3.0",
 		"prettier-config-xo": "1.0.4",
-		"semantic-release": "17.4.2",
+		"semantic-release": "17.4.3",
 		"ts-node": "9.1.1",
 		"typescript": "4.2.4"
 	},
