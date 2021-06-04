@@ -53,7 +53,7 @@ __metadata:
     "@types/update-notifier": 5.0.0
     convert: 1.9.1
     decompress: 4.2.1
-    execa: 5.0.1
+    execa: 5.1.1
     got: 11.8.2
     prettier: 2.3.0
     prettier-config-xo: 1.0.4
@@ -2100,9 +2100,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:5.0.1":
-  version: 5.0.1
-  resolution: "execa@npm:5.0.1"
+"execa@npm:5.1.1":
+  version: 5.1.1
+  resolution: "execa@npm:5.1.1"
   dependencies:
     cross-spawn: ^7.0.3
     get-stream: ^6.0.0
@@ -2113,7 +2113,7 @@ __metadata:
     onetime: ^5.1.2
     signal-exit: ^3.0.3
     strip-final-newline: ^2.0.0
-  checksum: f80f4bdf0a6192e66a36279b739730a7f706f49b49a8ca7fbad504756c972b375716cc6521ffa95fc0098906dac73d1d9346c74a1332fc0079c05e6bb21f08a2
+  checksum: 4286ade8cdb267bfb982bddbf894a58df29ff4f3bb871252a4832c4608e485dd71e5a8bbfde9f95d7db4af864f5de1aa6a1780017217bd946a16409b8e022987
   languageName: node
   linkType: hard
 
