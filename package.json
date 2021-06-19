@@ -57,7 +57,7 @@
 	"version": "0.0.0-development",
 	"dependencies": {
 		"@jonahsnider/util": "4.0.0",
-		"convert": "1.9.1",
+		"convert": "2.0.0",
 		"decompress": "4.2.1",
 		"execa": "5.1.1",
 		"got": "11.8.2",
