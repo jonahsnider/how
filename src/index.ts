@@ -32,7 +32,7 @@ if (options.glowVersion !== desiredGlowVersion) {
 		const stopwatch = Stopwatch.start();
 		await updateGlow(version);
 
-		const duration = convert(stopwatch.end()).from('ms').to('s').toFixed(2);
+		const duration = convert(stopwatch.end(), 'ms').to('s').toFixed(2);
 
 		console.log(`downloaded a new binary for Glow (makes Markdown pretty, took ${duration}s)`);
 	} catch (error) {
@@ -45,7 +45,7 @@ if (Math.random() > 0.95) {
 	try {
 		const stopwatch = Stopwatch.start();
 		await execa('git', ['pull'], {cwd: tldrPath});
-		const duration = convert(stopwatch.end()).from('ms').to('s').toFixed(2);
+		const duration = convert(stopwatch.end(), 'ms').to('s').toFixed(2);
 
 		console.log(`you got unlucky and the cache for the Markdown database was refreshed (took ${duration}s)`);
 	} catch (error) {
