@@ -50,7 +50,7 @@ __metadata:
     "@jonahsnider/util": 4.1.0
     "@types/decompress": 4.2.3
     "@types/node": 14.17.4
-    "@types/update-notifier": 5.0.0
+    "@types/update-notifier": 5.0.1
     convert: 2.1.1
     decompress: 4.2.1
     execa: 5.1.1
@@ -488,13 +488,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/update-notifier@npm:5.0.0":
-  version: 5.0.0
-  resolution: "@types/update-notifier@npm:5.0.0"
+"@types/update-notifier@npm:5.0.1":
+  version: 5.0.1
+  resolution: "@types/update-notifier@npm:5.0.1"
   dependencies:
     "@types/configstore": "*"
     boxen: ^4.2.0
-  checksum: cad675143d0559606f00e392dc85a482fc221de9b6aa2525b3dc17fb3827bb17aa13bba617c4bf1d27e48cc1765f8601343ff6a12d2a99101cf8dfd8facd9cb5
+  checksum: b56fc21ebcdc93fb021f5a3d6a4672397b20ec0f945aedcbb0bd88feb38ca7d377d4ff87fd365eb30956d0250812d7ad0454c0aa2231b04829f050a2796dca5b
   languageName: node
   linkType: hard
 
