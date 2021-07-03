@@ -11,7 +11,7 @@
 	"devDependencies": {
 		"@types/decompress": "4.2.3",
 		"@types/node": "14.17.4",
-		"@types/update-notifier": "5.0.0",
+		"@types/update-notifier": "5.0.1",
 		"prettier": "2.3.2",
 		"prettier-config-xo": "1.0.4",
 		"semantic-release": "17.4.4",
