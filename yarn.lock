@@ -48,7 +48,7 @@ __metadata:
   resolution: "@jonahsnider/how@workspace:."
   dependencies:
     "@jonahsnider/util": 4.1.0
-    "@types/decompress": 4.2.3
+    "@types/decompress": 4.2.4
     "@types/node": 14.17.4
     "@types/update-notifier": 5.0.1
     convert: 2.1.1
@@ -412,12 +412,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/decompress@npm:4.2.3":
-  version: 4.2.3
-  resolution: "@types/decompress@npm:4.2.3"
+"@types/decompress@npm:4.2.4":
+  version: 4.2.4
+  resolution: "@types/decompress@npm:4.2.4"
   dependencies:
     "@types/node": "*"
-  checksum: 1b5f6549452420bc563388a51b3ac06430e966a15edd55e42bb88e4826cdb0b5e8f6ad9502ea826fea1436983d61f7235ee2821027faba09ab0302617ca8168f
+  checksum: a20668023e0303f3c0bd9a5bcde33871fb508585c0ea2ebdbf871e852c5f980885f09a66ca0d1a606d30f1ccd296532c6358b8106f140b822b8f8993dd11810c
   languageName: node
   linkType: hard
 
