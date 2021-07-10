@@ -8,7 +8,7 @@ export function format(tldr: string): string {
 			examples,
 			`\`\`\`sh
 $1
-\`\`\``
+\`\`\``,
 		)
 		.replaceAll(exampleHeadings, '## $1')
 		.replaceAll(doubleBrackets, '')

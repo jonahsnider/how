@@ -97,7 +97,7 @@ for (const potentialPath of potentialPaths) {
 	const formatted = format(contents);
 
 	const tldr = await execa(glowPath, ['-s', 'dark', '-'], {
-		input: formatted
+		input: formatted,
 	});
 
 	stdout.write(format(tldr.stdout));

@@ -17,7 +17,7 @@ export const desiredGlowVersion = '1.4.0';
 
 export const defaultOptions: Options = {
 	glowVersion: null,
-	versionNumber: 1
+	versionNumber: 1,
 };
 
 /**
