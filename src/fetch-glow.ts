@@ -80,7 +80,7 @@ export function resolveVersion(host: OsKind): GlowBinaryArchive {
 enum OsArchToGlowArch {
 	'arm64' = 'arm64',
 	'x32' = 'i386',
-	'x64' = 'x86_64'
+	'x64' = 'x86_64',
 }
 
 /** Mapping of Node.js `os.platform` to OSs targeteted by Glow builds. */
@@ -89,7 +89,7 @@ enum OsPlatformToGlowOs {
 	'freebsd' = 'freebsd',
 	'linux' = 'linux',
 	'openbsd' = 'openbsd',
-	'win32' = 'Windows'
+	'win32' = 'Windows',
 }
 
 /**
@@ -110,7 +110,7 @@ export function getOsKind(): OsKind {
 
 	return {
 		arch: OsArchToGlowArch[arch as keyof typeof OsArchToGlowArch],
-		os: OsPlatformToGlowOs[platform as keyof typeof OsPlatformToGlowOs]
+		os: OsPlatformToGlowOs[platform as keyof typeof OsPlatformToGlowOs],
 	};
 }
 
@@ -126,7 +126,7 @@ export async function updateGlow(archiveName: GlowBinaryArchive): Promise<void> 
 
 	await decompress(archivePath, path.join(glowPath, '..'), {
 		// Ignore the documentation files in releases
-		filter: file => file.path.startsWith('glow')
+		filter: file => file.path.startsWith('glow'),
 	});
 
 	await fsp.unlink(archivePath);
