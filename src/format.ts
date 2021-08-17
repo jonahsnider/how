@@ -2,7 +2,7 @@ const examples = /^`(.*)`/gm;
 const exampleHeadings = /^- (.*)/gm;
 const doubleBrackets = /{{|}}/g;
 
-export function format(tldr: string): string {
+export function formatTldr(tldr: string): string {
 	return tldr
 		.replaceAll(
 			examples,
@@ -11,6 +11,10 @@ $1
 \`\`\``,
 		)
 		.replaceAll(exampleHeadings, '## $1')
-		.replaceAll(doubleBrackets, '')
-		.trimStart();
+		.replaceAll(doubleBrackets, '');
+}
+
+const leadingWhitespace = /^\s+/gim;
+export function formatGlow(markdown: string): string {
+	return markdown.replaceAll(leadingWhitespace, '');
 }

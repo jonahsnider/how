@@ -8,7 +8,7 @@ import path from 'path';
 import {stdout} from 'process';
 import updateNotifier from 'update-notifier';
 import {getOsKind, resolveVersion, updateGlow} from './fetch-glow.js';
-import {format} from './format.js';
+import {formatTldr, formatGlow} from './format.js';
 import {desiredGlowVersion, options} from './options.js';
 import {glowPath, tldrPath, __dirname} from './paths.js';
 
@@ -94,13 +94,13 @@ for (const potentialPath of potentialPaths) {
 	}
 
 	const contents = await fs.readFile(potentialPath, 'utf-8');
-	const formatted = format(contents);
+	const formatted = formatTldr(contents);
 
 	const tldr = await execa(glowPath, ['-s', 'dark', '-'], {
 		input: formatted,
 	});
 
-	stdout.write(format(tldr.stdout));
+	stdout.write(formatGlow(tldr.stdout));
 	process.exit(0);
 }
 
