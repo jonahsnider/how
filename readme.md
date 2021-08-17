@@ -1,7 +1,6 @@
 # How
 
 [![Build Status](https://github.com/jonahsnider/how/workflows/CI/badge.svg)](https://github.com/jonahsnider/how/actions)
-[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
 Learn how to use CLI apps.
 
@@ -43,7 +42,7 @@ how tar
 
 This project uses [Node.js](https://nodejs.org) to run, so make sure you've got a recent version installed.
 
-This project uses [Yarn](https://yarnpkg.com) 2 to manage dependencies and run scripts.
+[Yarn](https://yarnpkg.com) is used to manage dependencies and run scripts.
 After cloning the repository you can use this command to install dependencies:
 
 ```sh
