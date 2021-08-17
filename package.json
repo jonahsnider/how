@@ -62,5 +62,6 @@
 		"execa": "5.1.1",
 		"got": "11.8.2",
 		"update-notifier": "5.1.0"
-	}
+	},
+	"packageManager": "yarn@3.0.1"
 }
