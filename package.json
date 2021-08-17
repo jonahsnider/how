@@ -1,12 +1,39 @@
 {
-	"author": {
-		"email": "jonah@jonah.pw",
-		"name": "Jonah Snider",
-		"url": "https://jonah.pw"
-	},
+	"name": "@jonahsnider/how",
+	"version": "0.0.0-development",
 	"description": "Learn how to use CLI apps.",
 	"bugs": {
 		"url": "https://github.com/jonahsnider/how/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jonahsnider/how.git"
+	},
+	"license": "Apache-2.0",
+	"author": {
+		"name": "Jonah Snider",
+		"email": "jonah@jonah.pw",
+		"url": "https://jonah.pw"
+	},
+	"type": "module",
+	"main": "./tsc_output/index.js",
+	"bin": "./tsc_output/index.js",
+	"files": [
+		"tsc_output",
+		"docs"
+	],
+	"scripts": {
+		"prebuild": "rm -rf tsc_output",
+		"build": "tsc",
+		"style": "prettier --check ."
+	},
+	"dependencies": {
+		"@jonahsnider/util": "7.0.1",
+		"convert": "2.1.1",
+		"decompress": "4.2.1",
+		"execa": "5.1.1",
+		"got": "11.8.2",
+		"update-notifier": "5.1.0"
 	},
 	"devDependencies": {
 		"@types/decompress": "4.2.4",
@@ -18,26 +45,8 @@
 		"ts-node": "10.2.0",
 		"typescript": "4.3.5"
 	},
-	"files": [
-		"tsc_output",
-		"docs"
-	],
-	"bin": "./tsc_output/index.js",
-	"license": "Apache-2.0",
-	"main": "./tsc_output/index.js",
-	"name": "@jonahsnider/how",
-	"publishConfig": {
-		"access": "public"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/jonahsnider/how.git"
-	},
-	"type": "module",
-	"scripts": {
-		"build": "tsc",
-		"prebuild": "rm -rf tsc_output",
-		"style": "prettier --check ."
+	"engines": {
+		"node": ">=15.0.0"
 	},
 	"os": [
 		"darwin",
@@ -51,17 +60,8 @@
 		"x32",
 		"x64"
 	],
-	"engines": {
-		"node": ">=15.0.0"
-	},
-	"version": "0.0.0-development",
-	"dependencies": {
-		"@jonahsnider/util": "7.0.1",
-		"convert": "2.1.1",
-		"decompress": "4.2.1",
-		"execa": "5.1.1",
-		"got": "11.8.2",
-		"update-notifier": "5.1.0"
+	"publishConfig": {
+		"access": "public"
 	},
 	"packageManager": "yarn@3.0.1"
 }
