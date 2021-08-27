@@ -29,7 +29,7 @@
 	},
 	"dependencies": {
 		"@jonahsnider/util": "7.2.0",
-		"convert": "2.1.1",
+		"convert": "2.2.0",
 		"decompress": "4.2.1",
 		"execa": "5.1.1",
 		"got": "11.8.2",

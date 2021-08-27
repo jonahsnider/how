@@ -67,7 +67,7 @@ __metadata:
     "@types/decompress": 4.2.4
     "@types/node": 14.17.12
     "@types/update-notifier": 5.1.0
-    convert: 2.1.1
+    convert: 2.2.0
     decompress: 4.2.1
     execa: 5.1.1
     got: 11.8.2
@@ -1534,10 +1534,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"convert@npm:2.1.1":
-  version: 2.1.1
-  resolution: "convert@npm:2.1.1"
-  checksum: a6d3bc61a9d0eb1fcc39c58bd0502a61a01e820bcb5145d0509359ce5f089936aca50b5ce409a0ea8c84655f82a44a2d118a6aac8612e29c74900725a6074bba
+"convert@npm:2.2.0":
+  version: 2.2.0
+  resolution: "convert@npm:2.2.0"
+  checksum: 821c15357a71cac6df0c0df9382ee6ab96c8d611a35b6dd88b92246b62b8fe7191e6e255321815b5f4c1996c738a6ec818489e531dbe2d5cd04b42504ec00053
   languageName: node
   linkType: hard
 
