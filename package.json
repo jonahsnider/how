@@ -28,7 +28,7 @@
 		"style": "prettier --check ."
 	},
 	"dependencies": {
-		"@jonahsnider/util": "7.2.0",
+		"@jonahsnider/util": "8.0.1",
 		"convert": "3.1.0",
 		"decompress": "4.2.1",
 		"execa": "5.1.1",
