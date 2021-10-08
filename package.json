@@ -12,8 +12,8 @@
 	"license": "Apache-2.0",
 	"author": {
 		"name": "Jonah Snider",
-		"email": "jonah@jonah.pw",
-		"url": "https://jonah.pw"
+		"email": "jonah@jonahsnider.com",
+		"url": "https://jonahsnider.com"
 	},
 	"type": "module",
 	"main": "./tsc_output/index.js",
