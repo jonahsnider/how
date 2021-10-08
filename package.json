@@ -25,10 +25,11 @@
 	"scripts": {
 		"prebuild": "rm -rf tsc_output",
 		"build": "tsc",
-		"style": "prettier --check .",
 		"lint": "xo",
+		"style": "prettier --check .",
 		"test": "node . tar"
 	},
+	"prettier": "@jonahsnider/prettier-config",
 	"dependencies": {
 		"@jonahsnider/util": "8.0.1",
 		"convert": "4.2.0",
@@ -49,7 +50,6 @@
 		"typescript": "4.4.3",
 		"xo": "0.45.0"
 	},
-	"prettier": "@jonahsnider/prettier-config",
 	"engines": {
 		"node": ">=16.10.0"
 	},
