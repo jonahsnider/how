@@ -1,6 +1,7 @@
 # How
 
 [![Build Status](https://github.com/jonahsnider/how/workflows/CI/badge.svg)](https://github.com/jonahsnider/how/actions)
+[![npm version](https://img.shields.io/npm/v/@jonahsnider/how)](https://www.npmjs.com/package/@jonahsnider/how)
 
 Learn how to use CLI apps.
 
