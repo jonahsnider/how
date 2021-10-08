@@ -1,22 +1,24 @@
 #!/usr/bin/env node
-import {Stopwatch} from '@jonahsnider/util';
-import {convert} from 'convert';
+import fs from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
+import process, {stdout} from 'node:process';
+import {URL} from 'node:url';
+import type {PathLike} from 'node:fs';
 import execa from 'execa';
-import fs from 'fs/promises';
-import os from 'os';
-import path from 'path';
-import {stdout} from 'process';
+import {convert} from 'convert';
+import {Stopwatch} from '@jonahsnider/util';
 import updateNotifier from 'update-notifier';
-import {getOsKind, resolveVersion, updateGlow} from './fetch-glow.js';
-import {formatTldr, formatGlow} from './format.js';
+import {getOsKind, resolveVersion, updateGlow} from './fetch-glow/index.js';
+import {formatGlow, formatTldr} from './format.js';
 import {desiredGlowVersion, options} from './options.js';
-import {glowPath, tldrPath, __dirname} from './paths.js';
+import {glowPath, tldrPath} from './paths.js';
 
-updateNotifier({pkg: JSON.parse(await fs.readFile(path.join(__dirname, '..', 'package.json'), 'utf-8'))}).notify();
+updateNotifier({pkg: JSON.parse(await fs.readFile(new URL(path.join('..', 'package.json'), import.meta.url), 'utf-8')) as updateNotifier.Package}).notify();
 
 try {
 	await fs.access(tldrPath);
-} catch (error) {
+} catch {
 	await fs.mkdir(tldrPath, {recursive: true});
 	await execa('git', ['clone', 'https://github.com/tldr-pages/tldr.git', tldrPath]);
 	console.log('downloaded the database of Markdown examples');
@@ -75,7 +77,7 @@ switch (os.platform()) {
 		break;
 }
 
-const potentialPaths = categories.map(dir => path.join(tldrPath, 'pages', dir, `${command}.md`));
+const potentialPaths: PathLike[] = categories.map(dir => path.join(tldrPath, 'pages', dir, `${command}.md`));
 
 if (
 	// Command was probably a path (ex. '/home/jonah/programming/how/tsc_output')
@@ -83,22 +85,25 @@ if (
 	// Command is this program
 	command === 'how'
 ) {
-	potentialPaths.unshift(path.join(__dirname, '..', 'docs', 'how.md'));
+	potentialPaths.unshift(new URL(path.join('..', 'docs', 'how.md'), import.meta.url));
 }
 
 for (const potentialPath of potentialPaths) {
+	/* eslint-disable no-await-in-loop */
+	let contents: string;
+
 	try {
-		await fs.access(potentialPath);
+		contents = await fs.readFile(potentialPath, 'utf-8');
 	} catch {
 		continue;
 	}
 
-	const contents = await fs.readFile(potentialPath, 'utf-8');
 	const formatted = formatTldr(contents);
 
 	const tldr = await execa(glowPath, ['-s', 'dark', '-'], {
 		input: formatted,
 	});
+	/* eslint-enable no-await-in-loop */
 
 	stdout.write(formatGlow(tldr.stdout));
 	process.exit(0);

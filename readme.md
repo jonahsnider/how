@@ -35,39 +35,3 @@ Learn how to use `tar`:
 ```sh
 how tar
 ```
-
-## Contributing
-
-### Prequisites
-
-This project uses [Node.js](https://nodejs.org) to run, so make sure you've got a recent version installed.
-
-[Yarn](https://yarnpkg.com) is used to manage dependencies and run scripts.
-After cloning the repository you can use this command to install dependencies:
-
-```sh
-yarn
-```
-
-### Building
-
-Run the `build` script to compile the TypeScript source code into JavaScript in the `tsc_output` folder.
-
-### Style
-
-This project uses [Prettier](https://prettier.io) to validate the formatting and style across the codebase.
-
-You can run Prettier in the project with this command:
-
-```sh
-yarn run style
-```
-
-### Linting
-
-There is intentionally no lint script.
-Contributors are expected to write flawless code.
-
-### Testing
-
-There are no unit tests for the same reason there is no lint script.

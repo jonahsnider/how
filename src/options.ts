@@ -1,6 +1,6 @@
-import * as fs from 'fs/promises';
-import os from 'os';
-import path from 'path';
+import * as fs from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
 import {cacheDir, optionsPath} from './paths.js';
 
 export interface Options {
@@ -25,14 +25,14 @@ export const defaultOptions: Options = {
  * @param data - Options to flush
  */
 export async function flushOptions(data: Options): Promise<void> {
-	await fs.writeFile(optionsPath, JSON.stringify(data, undefined, 2) + os.EOL, 'utf-8');
+	await fs.writeFile(optionsPath, `${JSON.stringify(data, undefined, 2)}${os.EOL}`, 'utf-8');
 }
 
 try {
 	await fs.access(optionsPath);
-} catch (error) {
+} catch {
 	await fs.mkdir(cacheDir, {recursive: true});
 	await flushOptions(defaultOptions);
 }
 
-export const options: Options = JSON.parse(await fs.readFile(path.join(optionsPath), 'utf-8'));
+export const options = JSON.parse(await fs.readFile(path.join(optionsPath), 'utf-8')) as Options;
