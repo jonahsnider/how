@@ -387,7 +387,7 @@ __metadata:
   dependencies:
     "@jonahsnider/prettier-config": 1.0.0
     "@jonahsnider/util": 8.0.1
-    "@jonahsnider/xo-config": 4.0.1
+    "@jonahsnider/xo-config": 4.0.3
     "@types/decompress": 4.2.4
     "@types/node": 16.10.3
     "@types/update-notifier": 5.1.0
@@ -423,13 +423,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jonahsnider/xo-config@npm:4.0.1":
-  version: 4.0.1
-  resolution: "@jonahsnider/xo-config@npm:4.0.1"
+"@jonahsnider/xo-config@npm:4.0.3":
+  version: 4.0.3
+  resolution: "@jonahsnider/xo-config@npm:4.0.3"
   dependencies:
     eslint-plugin-jsdoc: 36.1.0
     eslint-plugin-tsdoc: 0.2.14
-  checksum: a85718c87cfc66e0f53854ed3876305929e2c22669fd3184f55bd44683b0bbcdcb968ec72b2b901379b6f0a2ae20a104a98815342bc69f1d02ebc6a37571e480
+  checksum: edd9e55b336aa65b679d946117a15bcb52c35889d948ee6fb4eb35da6986f4c81c795ad25c31dc706b071885206d80fcc75f4eb7c6a92feefefab78f51a33f9d
   languageName: node
   linkType: hard
 
