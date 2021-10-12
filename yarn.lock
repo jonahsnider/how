@@ -387,7 +387,7 @@ __metadata:
   dependencies:
     "@jonahsnider/prettier-config": 1.0.0
     "@jonahsnider/util": 8.0.1
-    "@jonahsnider/xo-config": 4.0.3
+    "@jonahsnider/xo-config": 4.0.4
     "@types/decompress": 4.2.4
     "@types/node": 16.10.3
     "@types/update-notifier": 5.1.0
@@ -423,13 +423,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jonahsnider/xo-config@npm:4.0.3":
-  version: 4.0.3
-  resolution: "@jonahsnider/xo-config@npm:4.0.3"
+"@jonahsnider/xo-config@npm:4.0.4":
+  version: 4.0.4
+  resolution: "@jonahsnider/xo-config@npm:4.0.4"
   dependencies:
-    eslint-plugin-jsdoc: 36.1.0
+    "@types/xo": 0.39.1
+    eslint-plugin-jsdoc: 36.1.1
     eslint-plugin-tsdoc: 0.2.14
-  checksum: edd9e55b336aa65b679d946117a15bcb52c35889d948ee6fb4eb35da6986f4c81c795ad25c31dc706b071885206d80fcc75f4eb7c6a92feefefab78f51a33f9d
+  checksum: d0d78058161026691a5f82bf4f33377e77899e08b2ede4d01daa20dc5caca8f6e189e83c633866e3bf0d53244dd6aacf93e7b5d9bdf0a261429f745952ff30d2
   languageName: node
   linkType: hard
 
@@ -992,6 +993,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/eslint@npm:*":
+  version: 7.28.1
+  resolution: "@types/eslint@npm:7.28.1"
+  dependencies:
+    "@types/estree": "*"
+    "@types/json-schema": "*"
+  checksum: 16086d00c2f56b16471fd02c2b495b07e3b84b57113fe34d94b57fb9fc0a5a85f6b87d787051f5d6acb859f6addda9b1e747d1a83ee08cac330d0f26c357fb9e
+  languageName: node
+  linkType: hard
+
 "@types/eslint@npm:^7.2.13":
   version: 7.28.0
   resolution: "@types/eslint@npm:7.28.0"
@@ -1111,6 +1122,15 @@ __metadata:
     "@types/configstore": "*"
     boxen: ^4.2.0
   checksum: 388474cd534efd4ccbd5dbdda8b584becd75e0ecb0c53ce645f9848e8d959b2bbfbcf0205970190fcc158dbb92015582642949dbaded26239abddd33368da631
+  languageName: node
+  linkType: hard
+
+"@types/xo@npm:0.39.1":
+  version: 0.39.1
+  resolution: "@types/xo@npm:0.39.1"
+  dependencies:
+    "@types/eslint": "*"
+  checksum: e7af5f173375fcb70b45a9d7b6fafb8880388d0ff2554ebcf0fd049c0a704e5cd6d81923e4f81446fa51c2ddbcef3fa696e541a2e019de4e5211296031cd6561
   languageName: node
   linkType: hard
 
@@ -3062,9 +3082,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsdoc@npm:36.1.0":
-  version: 36.1.0
-  resolution: "eslint-plugin-jsdoc@npm:36.1.0"
+"eslint-plugin-jsdoc@npm:36.1.1":
+  version: 36.1.1
+  resolution: "eslint-plugin-jsdoc@npm:36.1.1"
   dependencies:
     "@es-joy/jsdoccomment": 0.10.8
     comment-parser: 1.2.4
@@ -3077,7 +3097,7 @@ __metadata:
     spdx-expression-parse: ^3.0.1
   peerDependencies:
     eslint: ^6.0.0 || ^7.0.0
-  checksum: 5152a252a1c1fa8773a22aa0a69ab1c52a9334b12f0f3667548c6478d2d9acf970042b55ff2c48fa5165fab008cf20883f18a173fc5d6ba8f813074618b70ece
+  checksum: ceaca9f5c39dbbab4cbb2f302e787d1581919273b4a25adca9d1b6d83fbca66a0e58da024bc1f3f21c8710f473745a297cb2a1fe5ed56c9d1f16967995293620
   languageName: node
   linkType: hard
 
