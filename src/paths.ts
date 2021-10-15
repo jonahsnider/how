@@ -1,7 +1,7 @@
 import {homedir} from 'node:os';
 import path from 'node:path';
 
-export const cacheDir = path.join(homedir(), '.cache', 'how');
-export const optionsPath = path.join(cacheDir, 'options.json');
-export const tldrPath = path.join(cacheDir, 'tldr');
-export const glowPath = path.join(cacheDir, 'glow');
+export const CACHE_DIR = path.join(homedir(), '.cache', 'how');
+export const OPTIONS_PATH = path.join(CACHE_DIR, 'options.json');
+export const TLDR_PATH = path.join(CACHE_DIR, 'tldr');
+export const GLOW_PATH = path.join(CACHE_DIR, 'glow');

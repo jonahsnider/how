@@ -6,8 +6,8 @@ import {pipeline} from 'node:stream/promises';
 import path from 'node:path';
 import got from 'got';
 import decompress from 'decompress';
-import {glowPath} from '../paths.js';
-import {desiredGlowVersion, flushOptions, options} from '../options.js';
+import {GLOW_PATH} from '../../../paths.js';
+import {DESIRED_GLOW_VERSION, flushOptions, options} from '../../../options.js';
 import type * as Os from './os.js';
 import type * as Glow from './glow.js';
 
@@ -22,7 +22,7 @@ export function resolveVersion(host: Os.Kind): Glow.BinaryArchive {
 	switch (host.os) {
 		case 'Darwin': {
 			if (host.arch === 'x86_64') {
-				return `glow_${desiredGlowVersion}_Darwin_x86_64.tar.gz` as const;
+				return `glow_${DESIRED_GLOW_VERSION}_Darwin_x86_64.tar.gz` as const;
 			}
 
 			break;
@@ -30,7 +30,7 @@ export function resolveVersion(host: Os.Kind): Glow.BinaryArchive {
 
 		case 'Windows': {
 			if (host.arch === 'i386' || host.arch === 'x86_64') {
-				return `glow_${desiredGlowVersion}_Windows_${host.arch}.zip` as const;
+				return `glow_${DESIRED_GLOW_VERSION}_Windows_${host.arch}.zip` as const;
 			}
 
 			break;
@@ -43,7 +43,7 @@ export function resolveVersion(host: Os.Kind): Glow.BinaryArchive {
 				case 'arm64':
 				case 'i386':
 				case 'x86_64': {
-					return `glow_${desiredGlowVersion}_${host.os}_${host.arch}.tar.gz` as const;
+					return `glow_${DESIRED_GLOW_VERSION}_${host.os}_${host.arch}.tar.gz` as const;
 				}
 
 				default: {
@@ -107,19 +107,19 @@ export function getOsKind(): Os.Kind {
  * @param archiveName - The name of the Glow binary archive to download
  */
 export async function updateGlow(archiveName: Glow.BinaryArchive): Promise<void> {
-	const url = `https://github.com/charmbracelet/glow/releases/download/v${desiredGlowVersion}/${archiveName}`;
+	const url = `https://github.com/charmbracelet/glow/releases/download/v${DESIRED_GLOW_VERSION}/${archiveName}`;
 
-	const archivePath = `${glowPath}-archive`;
+	const archivePath = `${GLOW_PATH}-archive`;
 	await pipeline(got.stream(url), fs.createWriteStream(archivePath));
 
-	await decompress(archivePath, path.join(glowPath, '..'), {
+	await decompress(archivePath, path.join(GLOW_PATH, '..'), {
 		// Ignore the documentation files in releases
 		filter: file => file.path.startsWith('glow'),
 	});
 
 	await fsp.unlink(archivePath);
 
-	options.glowVersion = desiredGlowVersion;
+	options.glowVersion = DESIRED_GLOW_VERSION;
 
 	await flushOptions(options);
 }

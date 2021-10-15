@@ -385,19 +385,22 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@jonahsnider/how@workspace:."
   dependencies:
-    "@jonahsnider/prettier-config": 1.0.0
+    "@jonahsnider/prettier-config": 1.1.0
     "@jonahsnider/util": 8.0.1
-    "@jonahsnider/xo-config": 4.0.4
+    "@jonahsnider/xo-config": 4.1.0
     "@types/decompress": 4.2.4
     "@types/node": 16.10.3
     "@types/update-notifier": 5.1.0
-    convert: 4.2.2
+    clipanion: 3.2.0-rc.3
+    convert: 4.2.4
     decompress: 4.2.1
     execa: 5.1.1
     got: 11.8.2
+    path-exists: 5.0.0
     prettier: 2.4.1
     semantic-release: 18.0.0
     ts-node: 10.2.1
+    type-fest: 2.3.4
     typescript: 4.4.3
     update-notifier: 5.1.0
     xo: 0.45.0
@@ -406,13 +409,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@jonahsnider/prettier-config@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@jonahsnider/prettier-config@npm:1.0.0"
+"@jonahsnider/prettier-config@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@jonahsnider/prettier-config@npm:1.1.0"
   dependencies:
     "@types/prettier": 2.4.1
     prettier-config-xo: 2.0.0
-  checksum: 822e4125ac303058ea8c0735eef87e4e8a2bbc5f1bd1e486edf15bcabeba46db7f0316c7af753b61961228fecb6611e8c299ffdf02ae5312f3b2291ae790634d
+  checksum: 7ff95794438cb2c7f4f794812d2933cd4f7e6958f017452f0ed4aae9ebccab25fc2fefa3a11986f7fa1cb61db2363eaecd59c2f67ac863fade63d643775ce874
   languageName: node
   linkType: hard
 
@@ -423,14 +426,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jonahsnider/xo-config@npm:4.0.4":
-  version: 4.0.4
-  resolution: "@jonahsnider/xo-config@npm:4.0.4"
+"@jonahsnider/xo-config@npm:4.1.0":
+  version: 4.1.0
+  resolution: "@jonahsnider/xo-config@npm:4.1.0"
   dependencies:
     "@types/xo": 0.39.1
     eslint-plugin-jsdoc: 36.1.1
     eslint-plugin-tsdoc: 0.2.14
-  checksum: d0d78058161026691a5f82bf4f33377e77899e08b2ede4d01daa20dc5caca8f6e189e83c633866e3bf0d53244dd6aacf93e7b5d9bdf0a261429f745952ff30d2
+  checksum: 9c424566bfd38e5648cd0bc2c4cc3579f9715b1c58c66102c358d86ff90103ce5eafb615154cb6c59aa01a26d747d27f195ca7d7e14a4c5d9dc6eb17f4beb397
   languageName: node
   linkType: hard
 
@@ -2092,6 +2095,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"clipanion@npm:3.2.0-rc.3":
+  version: 3.2.0-rc.3
+  resolution: "clipanion@npm:3.2.0-rc.3"
+  dependencies:
+    typanion: ^3.3.1
+  peerDependencies:
+    typanion: "*"
+  checksum: 3b202a331b323e5f2fe5ceb6e2282eb69cba87e588e75f009bbb87ea1e64f17f5203067b760549d689d71a966267d8928f805354c68777781083fb3b1a8a4662
+  languageName: node
+  linkType: hard
+
 "cliui@npm:^7.0.2":
   version: 7.0.4
   resolution: "cliui@npm:7.0.4"
@@ -2341,10 +2355,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"convert@npm:4.2.2":
-  version: 4.2.2
-  resolution: "convert@npm:4.2.2"
-  checksum: ce3967fcd6bd92328b3e5d1550ff306ee57c03a564db241f5c40693ac5b541158af86103543b16e8ea163225a0be85c8b5e301c275c9b86884bd9b542eae69e9
+"convert@npm:4.2.4":
+  version: 4.2.4
+  resolution: "convert@npm:4.2.4"
+  checksum: 64f6fa00053fcb178ddaaaf39a5205bca616f675c99b0f17843ba946e07f7c25aad2616717ac48a3fe8b0a0c0800b49a6ec13c6dbb374fdfb2df4972709d47c8
   languageName: node
   linkType: hard
 
@@ -6684,6 +6698,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"path-exists@npm:5.0.0, path-exists@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "path-exists@npm:5.0.0"
+  checksum: 8ca842868cab09423994596eb2c5ec2a971c17d1a3cb36dbf060592c730c725cd524b9067d7d2a1e031fef9ba7bd2ac6dc5ec9fb92aa693265f7be3987045254
+  languageName: node
+  linkType: hard
+
 "path-exists@npm:^3.0.0":
   version: 3.0.0
   resolution: "path-exists@npm:3.0.0"
@@ -6695,13 +6716,6 @@ __metadata:
   version: 4.0.0
   resolution: "path-exists@npm:4.0.0"
   checksum: 505807199dfb7c50737b057dd8d351b82c033029ab94cb10a657609e00c1bc53b951cfdbccab8de04c5584d5eff31128ce6afd3db79281874a5ef2adbba55ed1
-  languageName: node
-  linkType: hard
-
-"path-exists@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "path-exists@npm:5.0.0"
-  checksum: 8ca842868cab09423994596eb2c5ec2a971c17d1a3cb36dbf060592c730c725cd524b9067d7d2a1e031fef9ba7bd2ac6dc5ec9fb92aa693265f7be3987045254
   languageName: node
   linkType: hard
 
@@ -8346,12 +8360,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typanion@npm:^3.3.1":
+  version: 3.5.0
+  resolution: "typanion@npm:3.5.0"
+  checksum: 9d9c7e7ba99f61a9bce3d02c486c264c1071bf946623d43c47b317450e37978bbb5c0dcab0aa31b8eb867a45417bc3ffbef3d1e59a32b92c3b932e4af488c77b
+  languageName: node
+  linkType: hard
+
 "type-check@npm:^0.4.0, type-check@npm:~0.4.0":
   version: 0.4.0
   resolution: "type-check@npm:0.4.0"
   dependencies:
     prelude-ls: ^1.2.1
   checksum: ec688ebfc9c45d0c30412e41ca9c0cdbd704580eb3a9ccf07b9b576094d7b86a012baebc95681999dd38f4f444afd28504cb3a89f2ef16b31d4ab61a0739025a
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:2.3.4":
+  version: 2.3.4
+  resolution: "type-fest@npm:2.3.4"
+  checksum: 95b5930587f52d467aacc88db0a39e947b2913d896bc382c1a43a0bba78624774c1725448ab5c0161e02ed9ac496cb351486b42a407158b40e7f3aee282d5b69
   languageName: node
   linkType: hard
 

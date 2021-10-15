@@ -6,3 +6,7 @@
 - Get typical usages of a command:
 
 `how {{command}}`
+
+- Refresh knowledge base:
+
+`how refresh`
