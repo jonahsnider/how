@@ -39,8 +39,8 @@
 		"update-notifier": "5.1.0"
 	},
 	"devDependencies": {
-		"@jonahsnider/prettier-config": "1.0.0",
-		"@jonahsnider/xo-config": "4.0.4",
+		"@jonahsnider/prettier-config": "1.1.0",
+		"@jonahsnider/xo-config": "4.1.0",
 		"@types/decompress": "4.2.4",
 		"@types/node": "16.10.3",
 		"@types/update-notifier": "5.1.0",
