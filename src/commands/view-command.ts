@@ -13,7 +13,7 @@ class MissingCommandError extends CommandError {
 	}
 }
 
-export class HowCommand extends Command {
+export class ViewCommand extends Command {
 	static paths = [Command.Default, ['view']];
 
 	// eslint-disable-next-line new-cap
