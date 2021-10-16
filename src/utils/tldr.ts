@@ -41,6 +41,10 @@ async function download(): Promise<void> {
 	await fs.mkdir(TLDR_PATH, {recursive: true});
 
 	await execa('git', ['clone', 'https://github.com/tldr-pages/tldr.git', TLDR_PATH]);
+
+	options.lastRefresh = Date.now();
+
+	await flushOptions(options);
 }
 
 export async function refresh(): Promise<void> {
