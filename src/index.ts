@@ -14,8 +14,8 @@ const pkg = JSON.parse(await fs.readFile(new URL(path.join('..', 'package.json')
 updateNotifier({pkg}).notify();
 
 const cli = new Cli({
-	binaryLabel: `how`,
-	binaryName: `how`,
+	binaryLabel: 'how',
+	binaryName: 'how',
 	binaryVersion: pkg.version,
 });
 
