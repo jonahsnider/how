@@ -31,7 +31,7 @@
 	},
 	"prettier": "@jonahsnider/prettier-config",
 	"dependencies": {
-		"@jonahsnider/util": "8.2.1",
+		"@jonahsnider/util": "8.4.1",
 		"clipanion": "3.2.0-rc.3",
 		"convert": "4.2.4",
 		"decompress": "4.2.1",
