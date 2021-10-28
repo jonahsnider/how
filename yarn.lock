@@ -372,7 +372,7 @@ __metadata:
     "@jonahsnider/util": 8.4.1
     "@jonahsnider/xo-config": 5.0.0
     "@types/decompress": 4.2.4
-    "@types/node": 16.11.6
+    "@types/node": 16.0.3
     "@types/update-notifier": 5.1.0
     clipanion: 3.2.0-rc.3
     convert: 4.2.4
@@ -1057,10 +1057,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.11.6":
-  version: 16.11.6
-  resolution: "@types/node@npm:16.11.6"
-  checksum: 6e19634766ff589d3d2f361c2196b671f8f133cdadc5ad347a621c360d8994b6c4fbccfb2ad9c60c588c593831a96497c9c6b77d2b7e91be723384b94f6368e7
+"@types/node@npm:16.0.3":
+  version: 16.0.3
+  resolution: "@types/node@npm:16.0.3"
+  checksum: b91ee69dbcf2c4b8a3c421439c5045a9903236506dae056d098587eec18770b867692018bb21ed8c911105c575670d88b8797f0a7fbca53e0899e2f3ad28d826
   languageName: node
   linkType: hard
 

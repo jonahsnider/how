@@ -44,7 +44,7 @@
 		"@jonahsnider/prettier-config": "1.1.0",
 		"@jonahsnider/xo-config": "5.0.0",
 		"@types/decompress": "4.2.4",
-		"@types/node": "16.11.6",
+		"@types/node": "16.0.3",
 		"@types/update-notifier": "5.1.0",
 		"prettier": "2.4.1",
 		"semantic-release": "18.0.0",
@@ -54,7 +54,7 @@
 		"xo": "0.46.0"
 	},
 	"engines": {
-		"node": ">=16.10.0"
+		"node": ">=16.0.0"
 	},
 	"os": [
 		"darwin",
