@@ -1,9 +1,3 @@
 {
-  "recommendations": [
-    "editorconfig.editorconfig",
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    "samverschueren.linter-xo",
-    "arcanis.vscode-zipfs"
-  ]
+	"recommendations": ["editorconfig.editorconfig", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "samverschueren.linter-xo", "arcanis.vscode-zipfs"]
 }
