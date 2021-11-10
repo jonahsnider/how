@@ -33,7 +33,7 @@
 	"dependencies": {
 		"@jonahsnider/util": "8.4.1",
 		"clipanion": "3.2.0-rc.3",
-		"convert": "4.2.5",
+		"convert": "4.3.0",
 		"decompress": "4.2.1",
 		"execa": "5.1.1",
 		"got": "11.8.2",

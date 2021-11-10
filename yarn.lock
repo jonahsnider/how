@@ -375,7 +375,7 @@ __metadata:
     "@types/node": 16.0.3
     "@types/update-notifier": 5.1.0
     clipanion: 3.2.0-rc.3
-    convert: 4.2.5
+    convert: 4.3.0
     decompress: 4.2.1
     execa: 5.1.1
     got: 11.8.2
@@ -2317,10 +2317,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"convert@npm:4.2.5":
-  version: 4.2.5
-  resolution: "convert@npm:4.2.5"
-  checksum: d4611d99c6de5e6ee6e281bbfc41c8dc6fcba9992d9cc20afa368fb3f692803e3a217c4d8377cc5aaccccac563c8169fd4a958dce80b8f42d4af45f07bc834ff
+"convert@npm:4.3.0":
+  version: 4.3.0
+  resolution: "convert@npm:4.3.0"
+  checksum: fc734a001f005db9a0c3fa04de29def46899f5604863182909e3084e0f04a2ed72c230c1033376003b5111bc2ed9b22fb5f6bc1a775ad476db64d6f3594ff3ef
   languageName: node
   linkType: hard
 
