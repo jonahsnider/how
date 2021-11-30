@@ -1,5 +1,5 @@
 {
-	"name": "@jonahsnider/how",
+	"name": "how-cli",
 	"version": "0.0.0-development",
 	"description": "Learn how to use CLI apps.",
 	"bugs": {

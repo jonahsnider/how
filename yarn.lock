@@ -364,34 +364,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jonahsnider/how@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@jonahsnider/how@workspace:."
-  dependencies:
-    "@jonahsnider/prettier-config": 1.1.0
-    "@jonahsnider/util": 8.4.3
-    "@jonahsnider/xo-config": 5.0.1
-    "@types/decompress": 4.2.4
-    "@types/node": 16.0.3
-    "@types/update-notifier": 5.1.0
-    clipanion: 3.2.0-rc.4
-    convert: 4.3.0
-    decompress: 4.2.1
-    execa: 5.1.1
-    got: 11.8.3
-    path-exists: 5.0.0
-    prettier: 2.5.0
-    semantic-release: 18.0.1
-    ts-node: 10.4.0
-    type-fest: 2.6.0
-    typescript: 4.5.2
-    update-notifier: 5.1.0
-    xo: 0.47.0
-  bin:
-    how: ./tsc_output/index.js
-  languageName: unknown
-  linkType: soft
-
 "@jonahsnider/prettier-config@npm:1.1.0":
   version: 1.1.0
   resolution: "@jonahsnider/prettier-config@npm:1.1.0"
@@ -4229,6 +4201,34 @@ __metadata:
   checksum: 98aecd095006d276b23cc3449eecbeb4f2126fa4150597aa308f2ccb9bb2c1c7cc3a9a294e3cf63c471cc8485912562219494da326abc366034c3c2372e1519b
   languageName: node
   linkType: hard
+
+"how-cli@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "how-cli@workspace:."
+  dependencies:
+    "@jonahsnider/prettier-config": 1.1.0
+    "@jonahsnider/util": 8.4.3
+    "@jonahsnider/xo-config": 5.0.1
+    "@types/decompress": 4.2.4
+    "@types/node": 16.0.3
+    "@types/update-notifier": 5.1.0
+    clipanion: 3.2.0-rc.4
+    convert: 4.3.0
+    decompress: 4.2.1
+    execa: 5.1.1
+    got: 11.8.3
+    path-exists: 5.0.0
+    prettier: 2.5.0
+    semantic-release: 18.0.1
+    ts-node: 10.4.0
+    type-fest: 2.6.0
+    typescript: 4.5.2
+    update-notifier: 5.1.0
+    xo: 0.47.0
+  bin:
+    how-cli: ./tsc_output/index.js
+  languageName: unknown
+  linkType: soft
 
 "http-cache-semantics@npm:^4.0.0, http-cache-semantics@npm:^4.1.0":
   version: 4.1.0
