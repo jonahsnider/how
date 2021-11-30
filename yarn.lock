@@ -4226,7 +4226,7 @@ __metadata:
     update-notifier: 5.1.0
     xo: 0.47.0
   bin:
-    how-cli: ./tsc_output/index.js
+    how: ./tsc_output/index.js
   languageName: unknown
   linkType: soft
 

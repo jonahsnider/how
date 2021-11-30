@@ -17,7 +17,9 @@
 	},
 	"type": "module",
 	"main": "./tsc_output/index.js",
-	"bin": "./tsc_output/index.js",
+	"bin": {
+		"how": "./tsc_output/index.js"
+	},
 	"files": [
 		"tsc_output",
 		"docs"
