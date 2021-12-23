@@ -1029,10 +1029,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.0.3":
-  version: 16.0.3
-  resolution: "@types/node@npm:16.0.3"
-  checksum: b91ee69dbcf2c4b8a3c421439c5045a9903236506dae056d098587eec18770b867692018bb21ed8c911105c575670d88b8797f0a7fbca53e0899e2f3ad28d826
+"@types/node@npm:16.11.17":
+  version: 16.11.17
+  resolution: "@types/node@npm:16.11.17"
+  checksum: 86ed84f79450f6aba1a6ef09f8407c10076966c3cc7cc4eb3d35b8ae4f47817e525641396ef0a667fa0a88fcdf484f6182812c074601403083bdf3b5e1ac0313
   languageName: node
   linkType: hard
 
@@ -4210,7 +4210,7 @@ __metadata:
     "@jonahsnider/util": 8.10.0
     "@jonahsnider/xo-config": 5.0.1
     "@types/decompress": 4.2.4
-    "@types/node": 16.0.3
+    "@types/node": 16.11.17
     "@types/update-notifier": 5.1.0
     clipanion: 3.2.0-rc.4
     convert: 4.3.0
