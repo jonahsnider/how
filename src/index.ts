@@ -19,7 +19,6 @@ const cli = new Cli({
 	binaryVersion: pkg.version,
 });
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 for (const Command of Object.values(Commands)) {
 	cli.register(Command);
 }
