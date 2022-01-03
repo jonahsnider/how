@@ -1,4 +1,4 @@
-import execa from 'execa';
+import {execa} from 'execa';
 import {pathExists} from 'path-exists';
 import type {Opaque} from 'type-fest';
 import {DESIRED_GLOW_VERSION, options} from '../../options.js';

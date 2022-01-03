@@ -2,7 +2,7 @@ import os from 'node:os';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {pathExists} from 'path-exists';
-import execa from 'execa';
+import {execa} from 'execa';
 import type {Opaque} from 'type-fest';
 import convert from 'convert';
 import {TLDR_PATH} from '../paths.js';
