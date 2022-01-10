@@ -4038,9 +4038,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"got@npm:12.0.0":
-  version: 12.0.0
-  resolution: "got@npm:12.0.0"
+"got@npm:12.0.1":
+  version: 12.0.1
+  resolution: "got@npm:12.0.1"
   dependencies:
     "@sindresorhus/is": ^4.2.0
     "@szmarczak/http-timer": ^5.0.1
@@ -4055,7 +4055,7 @@ __metadata:
     lowercase-keys: ^3.0.0
     p-cancelable: ^3.0.0
     responselike: ^2.0.0
-  checksum: 6f328b73ddf88fff7258b64f23fbb92d16e8b0a7497715e0ec0d338cc21ac1b0452f0cfed4f0b29ea0260e3776de5c7276ffa4551f46e004bd9e5364edde42ca
+  checksum: 216ef6f1542eedeb45f1af5e868c64ced3ffdcdedf0e8c3474a528806a0f22d79d0943f97adf031c2ef90602836a9a31515dd7610edaea8f73b6e9cdf4cc39a7
   languageName: node
   linkType: hard
 
@@ -4249,7 +4249,7 @@ __metadata:
     convert: 4.3.2
     decompress: 4.2.1
     execa: 6.0.0
-    got: 12.0.0
+    got: 12.0.1
     path-exists: 5.0.0
     prettier: 2.5.1
     semantic-release: 18.0.1
