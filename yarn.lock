@@ -607,10 +607,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sindresorhus/is@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "@sindresorhus/is@npm:4.2.0"
-  checksum: 59040dfb75c2eb6ab76e8c7ac10b7f7f6ba740f0b5ac618a89a8bcdbaf923836a8e998078d59d81f6f13f4b6bbe15bfe1bca962c877edcbe9160d1c100c56fd7
+"@sindresorhus/is@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "@sindresorhus/is@npm:4.6.0"
+  checksum: 83839f13da2c29d55c97abc3bc2c55b250d33a0447554997a85c539e058e57b8da092da396e252b11ec24a0279a0bed1f537fa26302209327060643e327f81d2
   languageName: node
   linkType: hard
 
@@ -3697,11 +3697,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"got@npm:12.0.1":
-  version: 12.0.1
-  resolution: "got@npm:12.0.1"
+"got@npm:12.0.2":
+  version: 12.0.2
+  resolution: "got@npm:12.0.2"
   dependencies:
-    "@sindresorhus/is": ^4.2.0
+    "@sindresorhus/is": ^4.6.0
     "@szmarczak/http-timer": ^5.0.1
     "@types/cacheable-request": ^6.0.2
     "@types/responselike": ^1.0.0
@@ -3710,11 +3710,11 @@ __metadata:
     decompress-response: ^6.0.0
     form-data-encoder: 1.7.1
     get-stream: ^6.0.1
-    http2-wrapper: ^2.1.9
+    http2-wrapper: ^2.1.10
     lowercase-keys: ^3.0.0
     p-cancelable: ^3.0.0
     responselike: ^2.0.0
-  checksum: 216ef6f1542eedeb45f1af5e868c64ced3ffdcdedf0e8c3474a528806a0f22d79d0943f97adf031c2ef90602836a9a31515dd7610edaea8f73b6e9cdf4cc39a7
+  checksum: bc42cb2436d8d1b6f1f0b046ead113e289eb5aa838beb889df5b4e75229c00fff694f8bde3ddd2d471cc1e772ab0216084f8cc215a3b30bdd9a529a06ee31edb
   languageName: node
   linkType: hard
 
@@ -3908,7 +3908,7 @@ __metadata:
     convert: 4.4.2
     decompress: 4.2.1
     execa: 6.0.0
-    got: 12.0.1
+    got: 12.0.2
     path-exists: 5.0.0
     prettier: 2.5.1
     semantic-release: 18.0.1
@@ -3951,7 +3951,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"http2-wrapper@npm:^2.1.9":
+"http2-wrapper@npm:^2.1.10":
   version: 2.1.10
   resolution: "http2-wrapper@npm:2.1.10"
   dependencies:
