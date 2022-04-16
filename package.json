@@ -44,11 +44,11 @@
 	},
 	"devDependencies": {
 		"@jonahsnider/prettier-config": "1.1.0",
-		"@jonahsnider/xo-config": "5.0.4",
+		"@jonahsnider/xo-config": "5.1.0",
 		"@types/decompress": "4.2.4",
 		"@types/node": "16.0.3",
 		"@types/update-notifier": "5.1.0",
-		"prettier": "2.5.1",
+		"prettier": "2.6.2",
 		"semantic-release": "18.0.1",
 		"ts-node": "10.7.0",
 		"type-fest": "2.12.2",
