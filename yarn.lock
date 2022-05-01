@@ -1682,14 +1682,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clipanion@npm:3.2.0-rc.10":
-  version: 3.2.0-rc.10
-  resolution: "clipanion@npm:3.2.0-rc.10"
+"clipanion@npm:3.2.0-rc.11":
+  version: 3.2.0-rc.11
+  resolution: "clipanion@npm:3.2.0-rc.11"
   dependencies:
-    typanion: ^3.3.1
+    typanion: ^3.8.0
   peerDependencies:
     typanion: "*"
-  checksum: 8e45be128201607620c6b154fc4ee2c6211cc9ff7ecad2959999269c9c1d8b8a12915345101aecdd81fee856daeccb43c143fefb451649c7b8d1862aa50d16b4
+  checksum: cbf37dd1b991c33f3450c1896e80d5a15c8e5fe647058020037bbd20e4afd6937612ee8877b9009d5128a07b4a01aa50297883e25520f61f0d249543c62abbc0
   languageName: node
   linkType: hard
 
@@ -3727,7 +3727,7 @@ __metadata:
     "@types/decompress": 4.2.4
     "@types/node": 16.0.3
     "@types/update-notifier": 5.1.0
-    clipanion: 3.2.0-rc.10
+    clipanion: 3.2.0-rc.11
     convert: 4.5.0
     decompress: 4.2.1
     execa: 6.0.0
@@ -7590,10 +7590,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typanion@npm:^3.3.1":
-  version: 3.5.0
-  resolution: "typanion@npm:3.5.0"
-  checksum: 9d9c7e7ba99f61a9bce3d02c486c264c1071bf946623d43c47b317450e37978bbb5c0dcab0aa31b8eb867a45417bc3ffbef3d1e59a32b92c3b932e4af488c77b
+"typanion@npm:^3.8.0":
+  version: 3.8.0
+  resolution: "typanion@npm:3.8.0"
+  checksum: ea3f97072c72efd4f1ac2c8996dad61e2a0810e6e2835f72b1e076e3f4c796666dc5f60af88329f3892173419a114b5d58a7369c16fdc46d76e3d9a55e8c486d
   languageName: node
   linkType: hard
 
