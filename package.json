@@ -46,7 +46,7 @@
 		"@jonahsnider/prettier-config": "1.1.1",
 		"@jonahsnider/xo-config": "5.1.0",
 		"@types/decompress": "4.2.4",
-		"@types/node": "16.0.3",
+		"@types/node": "16.11.33",
 		"@types/update-notifier": "5.1.0",
 		"prettier": "2.6.2",
 		"semantic-release": "19.0.2",
