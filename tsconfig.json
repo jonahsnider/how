@@ -1,16 +1,13 @@
 {
 	"compilerOptions": {
-		"module": "ESNext",
-		"target": "ESNext",
-		"lib": ["ESNext"],
-		"forceConsistentCasingInFileNames": true,
+		"allowSyntheticDefaultImports": true,
+		"exactOptionalPropertyTypes": false,
 		"moduleResolution": "Node",
 		"outDir": "tsc_output",
-		"allowSyntheticDefaultImports": true,
 		"resolveJsonModule": true,
-		"sourceMap": true,
-		"strict": true
+		"sourceMap": true
 	},
 	"exclude": ["node_modules", "nyc_output", "coverage"],
+	"extends": "@tsconfig/node16-strictest-esm",
 	"include": ["src"]
 }

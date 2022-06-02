@@ -14,10 +14,10 @@ class MissingCommandError extends CommandError {
 }
 
 export class ViewCommand extends Command {
-	static paths = [['view'], Command.Default];
+	static override paths = [['view'], Command.Default];
 
 	// eslint-disable-next-line new-cap
-	static usage = Command.Usage({
+	static override usage = Command.Usage({
 		description: 'Learn how to use a CLI app.',
 		examples: [
 			['Basic command', '$0 tar'],
