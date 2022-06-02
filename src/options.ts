@@ -21,7 +21,7 @@ interface OptionsV2 {
 type OptionsLatest = OptionsV2;
 type Options = OptionsV1 | OptionsV2;
 
-export {OptionsLatest as Optinons};
+export {OptionsLatest as Options};
 
 /**
  * The desired version of Glow to download locally.
