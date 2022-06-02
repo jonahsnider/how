@@ -9,7 +9,7 @@ import * as Commands from './commands/index.js';
 
 const args = process.argv.slice(2);
 
-const pkg = JSON.parse(await fs.readFile(new URL(path.join('..', 'package.json'), import.meta.url), 'utf-8')) as updateNotifier.Package;
+const pkg = JSON.parse(await fs.readFile(new URL(path.join('..', 'package.json'), import.meta.url), 'utf8')) as updateNotifier.Package;
 
 updateNotifier({pkg}).notify();
 

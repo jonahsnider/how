@@ -44,7 +44,7 @@ async function exists() {
  * @param data - Options to flush
  */
 export async function flushOptions(data: OptionsLatest): Promise<void> {
-	await fs.writeFile(OPTIONS_PATH, `${JSON.stringify(data, undefined, 2)}${os.EOL}`, 'utf-8');
+	await fs.writeFile(OPTIONS_PATH, `${JSON.stringify(data, undefined, 2)}${os.EOL}`, 'utf8');
 }
 
 async function readOptions(): Promise<OptionsLatest> {
@@ -53,7 +53,7 @@ async function readOptions(): Promise<OptionsLatest> {
 		await flushOptions(DEFAULT_OPTIONS);
 	}
 
-	const contents = await fs.readFile(path.join(OPTIONS_PATH), 'utf-8');
+	const contents = await fs.readFile(path.join(OPTIONS_PATH), 'utf8');
 
 	const rawOptions = JSON.parse(contents) as Options;
 
