@@ -71,7 +71,7 @@ export async function read(command: string): Promise<RawMarkdown | null> {
 
 		try {
 			// eslint-disable-next-line no-await-in-loop
-			const contents = (await fs.readFile(potentialPath, 'utf-8')) as RawMarkdown;
+			const contents = (await fs.readFile(potentialPath, 'utf8')) as RawMarkdown;
 
 			return contents;
 		} catch {

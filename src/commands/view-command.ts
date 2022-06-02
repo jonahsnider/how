@@ -38,7 +38,7 @@ export class ViewCommand extends Command {
 		const preparations: Array<Promise<void>> = [Glow.prepare()];
 
 		if (app === 'how') {
-			rawMarkdown = (await fs.readFile(new URL(path.join('..', '..', 'docs', 'how.md'), import.meta.url), 'utf-8')) as Tldr.RawMarkdown;
+			rawMarkdown = (await fs.readFile(new URL(path.join('..', '..', 'docs', 'how.md'), import.meta.url), 'utf8')) as Tldr.RawMarkdown;
 		} else {
 			const tldrPrepare = Tldr.prepare();
 			preparations.push(tldrPrepare);
