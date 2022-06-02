@@ -2976,20 +2976,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:6.0.0":
-  version: 6.0.0
-  resolution: "execa@npm:6.0.0"
+"execa@npm:6.1.0":
+  version: 6.1.0
+  resolution: "execa@npm:6.1.0"
   dependencies:
     cross-spawn: ^7.0.3
     get-stream: ^6.0.1
     human-signals: ^3.0.1
     is-stream: ^3.0.0
     merge-stream: ^2.0.0
-    npm-run-path: ^5.0.1
+    npm-run-path: ^5.1.0
     onetime: ^6.0.0
-    signal-exit: ^3.0.5
+    signal-exit: ^3.0.7
     strip-final-newline: ^3.0.0
-  checksum: c44249edd4d112266ecd95df9eff5657e07a24aa41f6fb34d9b8185db1255231b482b469e2b8837a73cc898a51ef38ca2bab15d78d80c46917adade3e688da7f
+  checksum: 1a4af799839134f5c72eb63d525b87304c1114a63aa71676c91d57ccef2e26f2f53e14c11384ab11c4ec479be1efa83d11c8190e00040355c2c5c3364327fa8e
   languageName: node
   linkType: hard
 
@@ -3767,7 +3767,7 @@ __metadata:
     clipanion: 3.2.0-rc.11
     convert: 4.5.0
     decompress: 4.2.1
-    execa: 6.0.0
+    execa: 6.1.0
     got: 12.1.0
     path-exists: 5.0.0
     prettier: 2.6.2
@@ -5724,12 +5724,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-run-path@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "npm-run-path@npm:5.0.1"
+"npm-run-path@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "npm-run-path@npm:5.1.0"
   dependencies:
     path-key: ^4.0.0
-  checksum: 176daed52660122c1c56be3dbc13b8199b5ad29243fc11836856bb9acf9dc333d9c80b1b734212db5e0bc7f0517df0fb6ae59096f193da8ea9844a590e17de9d
+  checksum: dc184eb5ec239d6a2b990b43236845332ef12f4e0beaa9701de724aa797fe40b6bbd0157fb7639d24d3ab13f5d5cf22d223a19c6300846b8126f335f788bee66
   languageName: node
   linkType: hard
 
@@ -7066,13 +7066,6 @@ __metadata:
   version: 3.0.3
   resolution: "signal-exit@npm:3.0.3"
   checksum: f0169d3f1263d06df32ca072b0bf33b34c6f8f0341a7a1621558a2444dfbe8f5fec76b35537fcc6f0bc4944bdb5336fe0bdcf41a5422c4e45a1dba3f45475e6c
-  languageName: node
-  linkType: hard
-
-"signal-exit@npm:^3.0.5":
-  version: 3.0.6
-  resolution: "signal-exit@npm:3.0.6"
-  checksum: b819ac81ba757af559dad0804233ae31bf6f054591cd8a671e9cbcf09f21c72ec3076fe87d1e04861f5b33b47d63f0694b568de99c99cd733ee2060515beb6d5
   languageName: node
   linkType: hard
 
