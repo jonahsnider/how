@@ -706,10 +706,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/node16-strictest-esm@npm:1.0.1":
-  version: 1.0.1
-  resolution: "@tsconfig/node16-strictest-esm@npm:1.0.1"
-  checksum: 7e164ab1dee28d047d98fe7c402da5081bc1078bc3e25574ca4f4b7fc82ae44d0abcffadb2cfef37f982794ea9a70e3e90f0e65ce2da0e0ea1c665fd386e280c
+"@tsconfig/node16-strictest-esm@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@tsconfig/node16-strictest-esm@npm:1.0.2"
+  checksum: 847042424269acdcdcf758e9e0c1e08c26903b1e397a16ec7d3f3a949035de26fe5c594fe7693d00f92f8ff8b5bc1fbf10d4b90d2bde0e72ee75be337aaf5928
   languageName: node
   linkType: hard
 
@@ -3771,7 +3771,7 @@ __metadata:
     "@jonahsnider/prettier-config": 1.1.1
     "@jonahsnider/util": 9.0.0
     "@jonahsnider/xo-config": 5.1.0
-    "@tsconfig/node16-strictest-esm": 1.0.1
+    "@tsconfig/node16-strictest-esm": 1.0.2
     "@types/decompress": 4.2.4
     "@types/node": 16.0.3
     "@types/update-notifier": 5.1.0
