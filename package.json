@@ -49,7 +49,7 @@
 		"@types/decompress": "4.2.4",
 		"@types/node": "16.0.3",
 		"@types/update-notifier": "5.1.0",
-		"prettier": "2.7.0",
+		"prettier": "2.7.1",
 		"semantic-release": "19.0.3",
 		"ts-node": "10.8.1",
 		"type-fest": "2.13.1",
