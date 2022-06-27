@@ -826,10 +826,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.0.3":
-  version: 16.0.3
-  resolution: "@types/node@npm:16.0.3"
-  checksum: b91ee69dbcf2c4b8a3c421439c5045a9903236506dae056d098587eec18770b867692018bb21ed8c911105c575670d88b8797f0a7fbca53e0899e2f3ad28d826
+"@types/node@npm:16.11.41":
+  version: 16.11.41
+  resolution: "@types/node@npm:16.11.41"
+  checksum: 808e4d65757bb13cf25e88dfa4e65880efef06652b04baecb051eb90cf090dda9812aa3505b31e963a48041eed7dbe0fc59c44c7c5e117da952ff951bf3a584a
   languageName: node
   linkType: hard
 
@@ -3773,7 +3773,7 @@ __metadata:
     "@jonahsnider/xo-config": 5.1.0
     "@tsconfig/node16-strictest-esm": 1.0.3
     "@types/decompress": 4.2.4
-    "@types/node": 16.0.3
+    "@types/node": 16.11.41
     "@types/update-notifier": 5.1.0
     clipanion: 3.2.0-rc.11
     convert: 4.5.0
