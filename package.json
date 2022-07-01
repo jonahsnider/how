@@ -40,7 +40,7 @@
 		"execa": "6.1.0",
 		"got": "12.1.0",
 		"path-exists": "5.0.0",
-		"update-notifier": "5.1.0"
+		"update-notifier": "6.0.2"
 	},
 	"devDependencies": {
 		"@jonahsnider/prettier-config": "1.1.2",
@@ -48,7 +48,7 @@
 		"@tsconfig/node16-strictest-esm": "1.0.3",
 		"@types/decompress": "4.2.4",
 		"@types/node": "16.11.42",
-		"@types/update-notifier": "5.1.0",
+		"@types/update-notifier": "6.0.0",
 		"prettier": "2.7.1",
 		"semantic-release": "19.0.3",
 		"ts-node": "10.8.1",
