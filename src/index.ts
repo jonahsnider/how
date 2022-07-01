@@ -4,12 +4,13 @@ import path from 'node:path';
 import process from 'node:process';
 import {URL} from 'node:url';
 import {Builtins, Cli} from 'clipanion';
+import type {Package} from 'update-notifier';
 import updateNotifier from 'update-notifier';
 import * as Commands from './commands/index.js';
 
 const args = process.argv.slice(2);
 
-const pkg = JSON.parse(await fs.readFile(new URL(path.join('..', 'package.json'), import.meta.url), 'utf8')) as updateNotifier.Package;
+const pkg = JSON.parse(await fs.readFile(new URL(path.join('..', 'package.json'), import.meta.url), 'utf8')) as Package;
 
 updateNotifier({pkg}).notify();
 
