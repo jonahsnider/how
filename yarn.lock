@@ -3743,7 +3743,7 @@ __metadata:
     prettier: 2.7.1
     semantic-release: 19.0.3
     ts-node: 10.8.2
-    type-fest: 2.15.1
+    type-fest: 2.16.0
     typescript: 4.7.4
     update-notifier: 6.0.2
     xo: 0.50.0
@@ -7635,10 +7635,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-fest@npm:2.15.1, type-fest@npm:^2.13.0":
-  version: 2.15.1
-  resolution: "type-fest@npm:2.15.1"
-  checksum: 4eb7d717aae49ca654a6926f99bef8112f76f71c7a685df8e0431e6ae8049bae6c526076f30ee5ccddc535d4b3b3869bcc5e8c4b7f0264b1007f810b898dd33c
+"type-fest@npm:2.16.0":
+  version: 2.16.0
+  resolution: "type-fest@npm:2.16.0"
+  checksum: 897fc5f6833de5ade5c4841d034bdfb6aaa168f24f725354ad13320b2a463b9df03a7a664b836b4c3bc7d9f92b22a25c26fe24668a35caf3b7a9ea5fcb847b8d
   languageName: node
   linkType: hard
 
@@ -7695,6 +7695,13 @@ __metadata:
   version: 2.6.0
   resolution: "type-fest@npm:2.6.0"
   checksum: 8cb11716f3c2e02d062edc4cafab10097fdcd6de323e34f8929e0eca15c490ba877e2f400d2c322f71922dae60f1750e1733604196ba96b0748c4fe54e958b7d
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:^2.13.0":
+  version: 2.15.1
+  resolution: "type-fest@npm:2.15.1"
+  checksum: 4eb7d717aae49ca654a6926f99bef8112f76f71c7a685df8e0431e6ae8049bae6c526076f30ee5ccddc535d4b3b3869bcc5e8c4b7f0264b1007f810b898dd33c
   languageName: node
   linkType: hard
 
