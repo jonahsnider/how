@@ -38,7 +38,7 @@
 		"convert": "4.6.0",
 		"decompress": "4.2.1",
 		"execa": "6.1.0",
-		"got": "12.3.0",
+		"got": "12.3.1",
 		"path-exists": "5.0.0",
 		"update-notifier": "6.0.2"
 	},
