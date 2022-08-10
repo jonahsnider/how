@@ -35,7 +35,7 @@
 	"dependencies": {
 		"@jonahsnider/util": "9.0.0",
 		"clipanion": "3.2.0-rc.11",
-		"convert": "4.6.0",
+		"convert": "4.6.1",
 		"decompress": "4.2.1",
 		"execa": "6.1.0",
 		"got": "12.3.1",
