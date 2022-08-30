@@ -44,7 +44,7 @@
 	},
 	"devDependencies": {
 		"@jonahsnider/prettier-config": "1.1.2",
-		"@jonahsnider/xo-config": "5.1.0",
+		"@jonahsnider/xo-config": "5.2.0",
 		"@tsconfig/node16-strictest-esm": "1.0.3",
 		"@types/decompress": "4.2.4",
 		"@types/node": "16.11.56",
