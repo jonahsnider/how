@@ -1512,6 +1512,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cacheable-request@npm:^10.1.2":
+  version: 10.1.2
+  resolution: "cacheable-request@npm:10.1.2"
+  dependencies:
+    get-stream: ^6.0.1
+    http-cache-semantics: ^4.1.0
+    keyv: ^4.5.0
+    mimic-response: ^4.0.0
+    normalize-url: ^7.1.0
+    responselike: ^3.0.0
+  checksum: 070dee2ae68c5f2a406b49bb721d32598f0b605b19de2643f34b83125884a4782000a65396c3b629503e58721b0b3e72d8ae83765ca83289a1f2a0a35d5db195
+  languageName: node
+  linkType: hard
+
 "cacheable-request@npm:^7.0.2":
   version: 7.0.2
   resolution: "cacheable-request@npm:7.0.2"
@@ -3297,10 +3311,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"form-data-encoder@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "form-data-encoder@npm:2.1.0"
-  checksum: f8799a1bcc2230c3e4e77649d11662f301d84c944da30dc1e7225a17826ba65bd330d0ec8b8b1832ee4c9fd56b2b95d9ca9e9ca464dccef62b90f77a0e913e01
+"form-data-encoder@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "form-data-encoder@npm:2.1.2"
+  checksum: 5c6401e3ebd2ba2adfa151c9fbd1df5adae8b1dd7bca5b18ab25ad1f9b83e20ddffb6b9ff77f5006b93d7ec2032e22828c9543c0bd4b2bc5b05335c31a3ba5b9
   languageName: node
   linkType: hard
 
@@ -3595,23 +3609,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"got@npm:12.4.1":
-  version: 12.4.1
-  resolution: "got@npm:12.4.1"
+"got@npm:12.5.0":
+  version: 12.5.0
+  resolution: "got@npm:12.5.0"
   dependencies:
     "@sindresorhus/is": ^5.2.0
     "@szmarczak/http-timer": ^5.0.1
-    "@types/cacheable-request": ^6.0.2
     cacheable-lookup: ^6.0.4
-    cacheable-request: ^7.0.2
+    cacheable-request: ^10.1.2
     decompress-response: ^6.0.0
-    form-data-encoder: ^2.1.0
+    form-data-encoder: ^2.1.2
     get-stream: ^6.0.1
     http2-wrapper: ^2.1.10
     lowercase-keys: ^3.0.0
     p-cancelable: ^3.0.0
     responselike: ^3.0.0
-  checksum: 56a150ea144c951868d0fb3d288bbcbc2c0d3f8f9c200c6fd60ffdc921f6aeb26d140f57fb973ab89e1aeb03a92c4b6422743e5a74d3cb081715901e249f2640
+  checksum: 0d31094b3ccb7f2f537da2b5a2cf479456affa16e8e5a7fe642b7b144baae2b3b913b547b45e8f7896b071c2d77e11d52efa3cb759e5ccd3e839d02a7ae16589
   languageName: node
   linkType: hard
 
@@ -3814,7 +3827,7 @@ __metadata:
     convert: 4.6.2
     decompress: 4.2.1
     execa: 6.1.0
-    got: 12.4.1
+    got: 12.5.0
     path-exists: 5.0.0
     prettier: 2.7.1
     semantic-release: 19.0.5
@@ -4748,6 +4761,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"keyv@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "keyv@npm:4.5.0"
+  dependencies:
+    json-buffer: 3.0.1
+  checksum: d294873cf88ec8f691e5edeb7b4b884f886c5f021a01902a0e243c362449db2b55419d7fb7187d059add747b7398321e39e44d391b65f94935174ce13452714d
+  languageName: node
+  linkType: hard
+
 "kind-of@npm:^6.0.3":
   version: 6.0.3
   resolution: "kind-of@npm:6.0.3"
@@ -5318,6 +5340,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mimic-response@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "mimic-response@npm:4.0.0"
+  checksum: 33b804cc961efe206efdb1fca6a22540decdcfce6c14eb5c0c50e5ae9022267ab22ce8f5568b1f7247ba67500fe20d523d81e0e9f009b321ccd9d472e78d1850
+  languageName: node
+  linkType: hard
+
 "min-indent@npm:^1.0.0, min-indent@npm:^1.0.1":
   version: 1.0.1
   resolution: "min-indent@npm:1.0.1"
@@ -5648,6 +5677,13 @@ __metadata:
   version: 6.1.0
   resolution: "normalize-url@npm:6.1.0"
   checksum: 4a4944631173e7d521d6b80e4c85ccaeceb2870f315584fa30121f505a6dfd86439c5e3fdd8cd9e0e291290c41d0c3599f0cb12ab356722ed242584c30348e50
+  languageName: node
+  linkType: hard
+
+"normalize-url@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "normalize-url@npm:7.1.0"
+  checksum: 9dd842d83507defef45dc029005c8dc4c124105ec8ddcb9d95c1dddacf656b9c1ea5a32ce9515d47a69e6b52e4a1af2c1e2c88e6583f460ae8e83a0d00147dbb
   languageName: node
   linkType: hard
 
