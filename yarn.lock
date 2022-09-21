@@ -1981,10 +1981,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"convert@npm:4.6.2":
-  version: 4.6.2
-  resolution: "convert@npm:4.6.2"
-  checksum: 4c4e119b0ef648e420579f18859684d4a3521d10c0f475f26c63ac4eb6489b5cdce549282fcf9614d21ab956b552ebecfa00e8b77212ac24fc61f487b6f5e2ec
+"convert@npm:4.6.3":
+  version: 4.6.3
+  resolution: "convert@npm:4.6.3"
+  checksum: ce129333f7e02004a78491cb29550e97b4788c0fc71c585424d57029dcc1400266383fbf4dca9ad6a521ed60a89c94ad0925b3bc270a3e988acd3fbccd7f0a3c
   languageName: node
   linkType: hard
 
@@ -3824,7 +3824,7 @@ __metadata:
     "@types/node": 16.11.59
     "@types/update-notifier": 6.0.1
     clipanion: 3.2.0-rc.12
-    convert: 4.6.2
+    convert: 4.6.3
     decompress: 4.2.1
     execa: 6.1.0
     got: 12.5.0
