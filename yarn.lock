@@ -799,6 +799,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/http-cache-semantics@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "@types/http-cache-semantics@npm:4.0.1"
+  checksum: 1048aacf627829f0d5f00184e16548205cd9f964bf0841c29b36bc504509230c40bc57c39778703a1c965a6f5b416ae2cbf4c1d4589c889d2838dd9dbfccf6e9
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:*, @types/json-schema@npm:^7.0.9":
   version: 7.0.9
   resolution: "@types/json-schema@npm:7.0.9"
@@ -1512,17 +1519,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cacheable-request@npm:^10.1.2":
-  version: 10.1.2
-  resolution: "cacheable-request@npm:10.1.2"
+"cacheable-lookup@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "cacheable-lookup@npm:7.0.0"
+  checksum: 9e2856763fc0a7347ab34d704c010440b819d4bb5e3593b664381b7433e942dd22e67ee5581f12256f908e79b82d30b86ebbacf40a081bfe10ee93fbfbc2d6a9
+  languageName: node
+  linkType: hard
+
+"cacheable-request@npm:^10.2.1":
+  version: 10.2.1
+  resolution: "cacheable-request@npm:10.2.1"
   dependencies:
+    "@types/http-cache-semantics": ^4.0.1
     get-stream: ^6.0.1
     http-cache-semantics: ^4.1.0
     keyv: ^4.5.0
     mimic-response: ^4.0.0
     normalize-url: ^7.1.0
     responselike: ^3.0.0
-  checksum: 070dee2ae68c5f2a406b49bb721d32598f0b605b19de2643f34b83125884a4782000a65396c3b629503e58721b0b3e72d8ae83765ca83289a1f2a0a35d5db195
+  checksum: 11bcee52d676623fbfe4b02b9f30930457796a7320a5db25392238a92a98185ffa7e87619d82a472c411c7f48eada5ec182bab41e6d849a038e84774dcdbba7d
   languageName: node
   linkType: hard
 
@@ -3609,14 +3624,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"got@npm:12.5.0":
-  version: 12.5.0
-  resolution: "got@npm:12.5.0"
+"got@npm:12.5.1":
+  version: 12.5.1
+  resolution: "got@npm:12.5.1"
   dependencies:
     "@sindresorhus/is": ^5.2.0
     "@szmarczak/http-timer": ^5.0.1
-    cacheable-lookup: ^6.0.4
-    cacheable-request: ^10.1.2
+    cacheable-lookup: ^7.0.0
+    cacheable-request: ^10.2.1
     decompress-response: ^6.0.0
     form-data-encoder: ^2.1.2
     get-stream: ^6.0.1
@@ -3624,7 +3639,7 @@ __metadata:
     lowercase-keys: ^3.0.0
     p-cancelable: ^3.0.0
     responselike: ^3.0.0
-  checksum: 0d31094b3ccb7f2f537da2b5a2cf479456affa16e8e5a7fe642b7b144baae2b3b913b547b45e8f7896b071c2d77e11d52efa3cb759e5ccd3e839d02a7ae16589
+  checksum: 479a279e8f0ba39270d500e8998dda897c850a9f43eef716c58fcaa7b5049e74ca3fd8ab70be1e2a59a5c8b59a83b9deab16d4e523423bb1e2dfe17401750efa
   languageName: node
   linkType: hard
 
@@ -3827,7 +3842,7 @@ __metadata:
     convert: 4.6.3
     decompress: 4.2.1
     execa: 6.1.0
-    got: 12.5.0
+    got: 12.5.1
     path-exists: 5.0.0
     prettier: 2.7.1
     semantic-release: 19.0.5
