@@ -16,21 +16,30 @@ const MAX_AGE_BEFORE_REFRESH = convert(7, 'days').to('ms');
 const categories = new Set(['common', 'linux']);
 
 switch (os.platform()) {
-	case 'darwin':
+	case 'darwin': {
 		categories.add('osx');
 		break;
+	}
+
 	case 'cygwin':
-	case 'win32':
+	case 'win32': {
 		categories.add('windows');
 		break;
-	case 'sunos':
+	}
+
+	case 'sunos': {
 		categories.add('sunos');
 		break;
-	case 'android':
+	}
+
+	case 'android': {
 		categories.add('android');
 		break;
-	default:
+	}
+
+	default: {
 		break;
+	}
 }
 
 async function exists(): Promise<boolean> {
@@ -65,7 +74,7 @@ export async function prepare(): Promise<void> {
 	}
 }
 
-export async function read(command: string): Promise<RawMarkdown | null> {
+export async function read(command: string): Promise<RawMarkdown | undefined> {
 	for (const category of categories) {
 		const potentialPath = path.join(TLDR_PATH, 'pages', category, `${command}.md`);
 
@@ -79,7 +88,7 @@ export async function read(command: string): Promise<RawMarkdown | null> {
 		}
 	}
 
-	return null;
+	return undefined;
 }
 
 const EXAMPLES = /^`(.*)`/gm;

@@ -4,24 +4,26 @@ import path from 'node:path';
 import {pathExists} from 'path-exists';
 import {CACHE_DIR, OPTIONS_PATH} from './paths.js';
 
-interface OptionsV1 {
+type OptionsV1 = {
 	versionNumber: 1;
 	/** Currently installed version for glow. */
+	// eslint-disable-next-line @typescript-eslint/ban-types
 	glowVersion: string | null;
-}
+};
 
-interface OptionsV2 {
+type OptionsV2 = {
 	versionNumber: 2;
 	/** Currently installed version for glow. */
+	// eslint-disable-next-line @typescript-eslint/ban-types
 	glowVersion: string | null;
 	/** Timestamp of last refresh. */
 	lastRefresh: number;
-}
+};
 
 type OptionsLatest = OptionsV2;
 type Options = OptionsV1 | OptionsV2;
 
-export {OptionsLatest as Options};
+export type {OptionsLatest as Options};
 
 /**
  * The desired version of Glow to download locally.
@@ -70,7 +72,7 @@ async function readOptions(): Promise<OptionsLatest> {
 		}
 
 		default: {
-			throw new RangeError(`Unknown options version`);
+			throw new RangeError('Unknown options version');
 		}
 	}
 }
