@@ -1,6 +1,5 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import {URL} from 'node:url';
 import {Command, Option} from 'clipanion';
 import {CommandError} from '../utils/errors.js';
 import * as Glow from '../utils/glow/index.js';
@@ -46,7 +45,7 @@ export class ViewCommand extends Command {
 
 			const rawTldr = await Tldr.read(app);
 
-			if (rawTldr === null) {
+			if (rawTldr === undefined) {
 				throw new MissingCommandError("That command doesn't exist in the knowledge base (try running `how refresh`)");
 			}
 

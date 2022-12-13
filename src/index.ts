@@ -2,7 +2,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
-import {URL} from 'node:url';
 import {Builtins, Cli} from 'clipanion';
 import type {Package} from 'update-notifier';
 import updateNotifier from 'update-notifier';
