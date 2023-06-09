@@ -15,16 +15,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - name: Get Yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
+          cache: 'yarn'
       - name: Install dependencies with Yarn
         run: yarn install --immutable
       - name: Compile TypeScript
@@ -46,16 +37,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - name: Get Yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
+          cache: 'yarn'
       - name: Install dependencies with Yarn
         run: yarn install --immutable
       - name: Check style
@@ -72,16 +54,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - name: Get Yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
+          cache: 'yarn'
       - name: Install dependencies with Yarn
         run: yarn install --immutable
       - name: Lint
@@ -98,16 +71,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - name: Get Yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
+          cache: 'yarn'
       - name: Install dependencies with Yarn
         run: yarn install --immutable
       - name: Build
@@ -130,16 +94,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - name: Get Yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
+          cache: 'yarn'
       - name: Install dependencies with Yarn
         run: yarn install --immutable
       - name: Compile TypeScript for publishing
