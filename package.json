@@ -37,7 +37,7 @@
 		"clipanion": "3.2.1",
 		"convert": "4.13.0",
 		"decompress": "4.2.1",
-		"execa": "6.1.0",
+		"execa": "7.1.1",
 		"got": "12.6.1",
 		"path-exists": "5.0.0",
 		"update-notifier": "6.0.2"
