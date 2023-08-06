@@ -4033,7 +4033,7 @@ __metadata:
     prettier: 2.8.7
     semantic-release: 21.0.7
     ts-node: 10.9.1
-    type-fest: 3.13.1
+    type-fest: 4.1.0
     typescript: 4.9.5
     update-notifier: 6.0.2
     xo: 0.53.1
@@ -8280,10 +8280,10 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
-"type-fest@npm:3.13.1":
-  version: 3.13.1
-  resolution: "type-fest@npm:3.13.1"
-  checksum: c06b0901d54391dc46de3802375f5579868949d71f93b425ce564e19a428a0d411ae8d8cb0e300d330071d86152c3ea86e744c3f2860a42a79585b6ec2fdae8e
+"type-fest@npm:4.1.0":
+  version: 4.1.0
+  resolution: "type-fest@npm:4.1.0"
+  checksum: a9cfa9b70abaa96d7e80709aeb2197a372c2caa54d134afdb8ae955de9457aba04a71d17d68dccbb745c96f4c5bfd372da1222d8b44d70f4809074620016507c
   languageName: node
   linkType: hard
 
