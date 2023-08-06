@@ -1,12 +1,12 @@
-import os from 'node:os';
 import fs from 'node:fs/promises';
+import os from 'node:os';
 import path from 'node:path';
-import {pathExists} from 'path-exists';
 import {execa} from 'execa';
+import {convert} from 'convert';
+import {pathExists} from 'path-exists';
 import type {Opaque} from 'type-fest';
-import convert from 'convert';
-import {TLDR_PATH} from '../paths.js';
 import {flushOptions, options} from '../options.js';
+import {TLDR_PATH} from '../paths.js';
 
 export type RawMarkdown = Opaque<string, 'RawMarkdown'>;
 export type FormattedMarkdown = Opaque<string, 'FormattedMarkdown'>;

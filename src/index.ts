@@ -3,8 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 import {Builtins, Cli} from 'clipanion';
-import type {Package} from 'update-notifier';
-import updateNotifier from 'update-notifier';
+import updateNotifier, {type Package} from 'update-notifier';
 import * as Commands from './commands/index.js';
 
 const args = process.argv.slice(2);

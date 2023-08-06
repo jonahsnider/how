@@ -2,7 +2,6 @@ import fs from 'node:fs';
 import fsp from 'node:fs/promises';
 import os from 'node:os';
 import {pipeline} from 'node:stream/promises';
-
 import path from 'node:path';
 import got from 'got';
 import decompress from 'decompress';

@@ -1,13 +1,15 @@
 {
 	"compilerOptions": {
-		"allowSyntheticDefaultImports": true,
 		"exactOptionalPropertyTypes": false,
-		"moduleResolution": "Node",
+		"inlineSourceMap": true,
+		"inlineSources": true,
+		"module": "node16",
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
 		"outDir": "tsc_output",
-		"resolveJsonModule": true,
-		"sourceMap": true
+		"resolveJsonModule": true
 	},
 	"exclude": ["node_modules", "nyc_output", "coverage"],
-	"extends": "@tsconfig/node16-strictest-esm",
+	"extends": ["@tsconfig/strictest/tsconfig", "@tsconfig/node16/tsconfig.json"],
 	"include": ["src"]
 }
