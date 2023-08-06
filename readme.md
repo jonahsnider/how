@@ -5,6 +5,8 @@
 
 Learn how to use CLI apps.
 
+![A screenshot of `how` being used inside a terminal](./demo.png)
+
 ## Usage
 
 Install using your favorite Node.js package manager:
