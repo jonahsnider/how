@@ -4230,7 +4230,7 @@ __metadata:
     type-fest: 4.2.0
     typescript: 5.1.6
     update-notifier: 6.0.2
-    xo: 0.55.1
+    xo: 0.56.0
   bin:
     how: ./tsc_output/index.js
   languageName: unknown
@@ -9050,9 +9050,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"xo@npm:0.55.1":
-  version: 0.55.1
-  resolution: "xo@npm:0.55.1"
+"xo@npm:0.56.0":
+  version: 0.56.0
+  resolution: "xo@npm:0.56.0"
   dependencies:
     "@eslint/eslintrc": ^2.1.0
     "@typescript-eslint/eslint-plugin": ^6.0.0
@@ -9092,7 +9092,7 @@ __metadata:
     typescript: ^5.1.6
   bin:
     xo: cli.js
-  checksum: 54063dc97b9dd802da7f8d0d3f18992efc37770ef1eda851215fb52249460c8184c207961b640049f9fbc1bc0a1d249333904f1139612c34e12a59aa3b3ae71d
+  checksum: 890a941e823167e8c33618c9bc6bdb9074c52da38e82a21ec27085fd868c3864b3f71973e52fe37cb0401f558042c0218ad0d653086c2c2bafa1805edf8f0905
   languageName: node
   linkType: hard
 
