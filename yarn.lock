@@ -4224,7 +4224,7 @@ __metadata:
     execa: 7.2.0
     got: 13.0.0
     path-exists: 5.0.0
-    prettier: 3.0.1
+    prettier: 3.0.2
     semantic-release: 21.0.7
     ts-node: 10.9.1
     type-fest: 4.2.0
@@ -7051,7 +7051,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.0.1, prettier@npm:^3.0.0":
+"prettier@npm:3.0.2":
+  version: 3.0.2
+  resolution: "prettier@npm:3.0.2"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: 118b59ddb6c80abe2315ab6d0f4dd1b253be5cfdb20622fa5b65bb1573dcd362e6dd3dcf2711dd3ebfe64aecf7bdc75de8a69dc2422dcd35bdde7610586b677a
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^3.0.0":
   version: 3.0.1
   resolution: "prettier@npm:3.0.1"
   bin:
