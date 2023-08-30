@@ -1077,13 +1077,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/update-notifier@npm:6.0.4":
-  version: 6.0.4
-  resolution: "@types/update-notifier@npm:6.0.4"
+"@types/update-notifier@npm:6.0.5":
+  version: 6.0.5
+  resolution: "@types/update-notifier@npm:6.0.5"
   dependencies:
     "@types/configstore": "*"
     boxen: ^7.0.0
-  checksum: f252960ce4c5a7c59668a5e486697e42b324a0404e9671614cef253614896f364b929b9005f8211309a5a69ca8242d4ef8f904d1fd543489dff800a7d7422b15
+  checksum: 4a0cf19c184ea2a9b409c2ed567bcd2cafafcce2ddf83d9921de8c7841b651358755f9076e702610f8b23529ee72a6d2be6e9381397fc3dcdc3567abfee85dde
   languageName: node
   linkType: hard
 
@@ -4250,7 +4250,7 @@ __metadata:
     "@tsconfig/strictest": 2.0.2
     "@types/decompress": 4.2.4
     "@types/node": 16.18.46
-    "@types/update-notifier": 6.0.4
+    "@types/update-notifier": 6.0.5
     clipanion: 3.2.1
     convert: 4.13.1
     decompress: 4.2.1

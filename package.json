@@ -49,7 +49,7 @@
 		"@tsconfig/strictest": "2.0.2",
 		"@types/decompress": "4.2.4",
 		"@types/node": "16.18.46",
-		"@types/update-notifier": "6.0.4",
+		"@types/update-notifier": "6.0.5",
 		"prettier": "3.0.3",
 		"semantic-release": "21.1.1",
 		"ts-node": "10.9.1",
