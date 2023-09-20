@@ -1052,10 +1052,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.18.52":
-  version: 16.18.52
-  resolution: "@types/node@npm:16.18.52"
-  checksum: 6b1f27a848a69a70039cb27c2583317b5d051990933955c42bc2a2f299266ffa360f7cc3c7089d04fdf39144c476d475931900f00dabbc4f933eeb2d664f9778
+"@types/node@npm:16.18.53":
+  version: 16.18.53
+  resolution: "@types/node@npm:16.18.53"
+  checksum: 26c05cde59664360c22e0dda70776ca6f1b35f0b94e4f84d2c21e2afa2e69ac3a2c99bbb57b43405f81df1b2598f6d707ccc7c4c31865f90e45c4625d8400518
   languageName: node
   linkType: hard
 
@@ -4290,7 +4290,7 @@ __metadata:
     "@tsconfig/node16": 16.1.1
     "@tsconfig/strictest": 2.0.2
     "@types/decompress": 4.2.4
-    "@types/node": 16.18.52
+    "@types/node": 16.18.53
     "@types/update-notifier": 6.0.5
     clipanion: 3.2.1
     convert: 4.13.2
