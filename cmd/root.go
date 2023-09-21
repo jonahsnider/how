@@ -13,6 +13,7 @@ var rootCmd = &cobra.Command{
 	Short:   "Learn how to use a CLI app",
 	Args:    cobra.ArbitraryArgs,
 	Aliases: []string{"how view"},
+	Version: "v3.1.0",
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) == 0 {
 			_ = cmd.Help()
