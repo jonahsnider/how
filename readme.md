@@ -8,7 +8,9 @@ Learn how to use CLI apps.
 
 ## Usage
 
-TODO
+You can install `how` by downloading the latest binary from the [releases page](https://github.com/jonahsnider/how/releases/latest).
+
+Once installed and added to your path, you can use it like this:
 
 ```sh
 how <app>
