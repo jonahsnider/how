@@ -13,13 +13,10 @@ jobs:
         uses: actions/checkout@v4
       - name: Set up Go
         uses: actions/setup-go@v4
+        with:
+          go-version-file: './go.mod'
       - name: Compile app
         run: go build
-      - name: Upload compiled binary
-        uses: actions/upload-artifact@v3
-        with:
-          name: how
-          path: how
   check-formatting:
     name: Check formatting
 
@@ -30,6 +27,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Set up Go
         uses: actions/setup-go@v4
+        with:
+          go-version-file: './go.mod'
       - name: Check formatting
         run: gofmt -l .
   lint:
@@ -42,6 +41,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Set up Go
         uses: actions/setup-go@v4
+        with:
+          go-version-file: './go.mod'
       - name: Lint
         uses: golangci/golangci-lint-action@v3
         with:
@@ -62,6 +63,8 @@ jobs:
           fetch-depth: 0
       - name: Set up Go
         uses: actions/setup-go@v4
+        with:
+          go-version-file: './go.mod'
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v5
         with:
