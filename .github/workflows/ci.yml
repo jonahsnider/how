@@ -32,7 +32,7 @@ jobs:
       - name: Check formatting
         run: gofmt -l .
   lint:
-    name: Check formatting
+    name: Lint
 
     runs-on: ubuntu-latest
 
