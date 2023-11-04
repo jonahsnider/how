@@ -3,7 +3,7 @@ module how
 go 1.21.1
 
 require (
-	github.com/spf13/cobra v1.7.0
+	github.com/spf13/cobra v1.8.0
 	golang.org/x/term v0.12.0
 )
 
