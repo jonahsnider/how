@@ -4,7 +4,7 @@ go 1.21.5
 
 require (
 	github.com/spf13/cobra v1.8.0
-	golang.org/x/term v0.16.0
+	golang.org/x/term v0.31.0
 )
 
 require (
