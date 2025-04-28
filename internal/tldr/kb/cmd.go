@@ -37,6 +37,7 @@ func readCmdDocs(cmd string) string {
 			os.Exit(1)
 		}
 
+		//nolint:errcheck
 		defer f.Close()
 
 		b, err := io.ReadAll(f)

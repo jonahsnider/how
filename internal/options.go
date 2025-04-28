@@ -62,6 +62,7 @@ func (o *Options) Flush() error {
 		os.Exit(1)
 	}
 
+	//nolint:errcheck
 	defer f.Close()
 
 	_, err = f.Write(s)
@@ -94,7 +95,12 @@ func Load() *Options {
 	f, err := os.Open(OptionsPath)
 	if err != nil {
 		if errors.Is(err, os.ErrNotExist) {
-			defaultOptions.Flush()
+			err = defaultOptions.Flush()
+			if err != nil {
+				fmt.Println("Failed to save default options.")
+				fmt.Fprintln(os.Stderr, err)
+				os.Exit(1)
+			}
 			return &defaultOptions
 		}
 
@@ -103,6 +109,7 @@ func Load() *Options {
 		os.Exit(1)
 	}
 
+	//nolint:errcheck
 	defer f.Close()
 
 	var o baseOptions
