@@ -34,7 +34,12 @@ func Download() {
 
 	o := internal.Load()
 	o.LastRefresh = time.Now()
-	o.Flush()
+	err = o.Flush()
+	if err != nil {
+		fmt.Println("Failed to save knowledge base.")
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
+	}
 }
 
 func Refresh() {
@@ -52,7 +57,12 @@ func Refresh() {
 
 	o := internal.Load()
 	o.LastRefresh = time.Now()
-	o.Flush()
+	err = o.Flush()
+	if err != nil {
+		fmt.Println("Failed to save knowledge base.")
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
+	}
 }
 
 var maxAgeBeforeRefresh = time.Duration(7 * 24 * time.Hour)
