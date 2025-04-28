@@ -2,7 +2,7 @@ module how
 
 go 1.23.0
 
-toolchain go1.23.5
+toolchain go1.24.2
 
 require (
 	github.com/spf13/cobra v1.9.1
