@@ -12,7 +12,7 @@ import (
 
 	"regexp"
 
-	"github.com/charmbracelet/glamour"
+	"charm.land/glamour/v2"
 	"golang.org/x/term"
 )
 
@@ -58,7 +58,6 @@ func fmtCmdDocs(cmdDocs string) string {
 	termWidth, _, _ := term.GetSize(0)
 
 	r, _ := glamour.NewTermRenderer(
-		glamour.WithAutoStyle(),
 		glamour.WithWordWrap(termWidth),
 	)
 
