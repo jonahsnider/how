@@ -58,6 +58,7 @@ func fmtCmdDocs(cmdDocs string) string {
 	termWidth, _, _ := term.GetSize(0)
 
 	r, _ := glamour.NewTermRenderer(
+		glamour.WithEnvironmentConfig(),
 		glamour.WithWordWrap(termWidth),
 	)
 
