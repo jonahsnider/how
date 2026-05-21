@@ -1,0 +1,25 @@
+name: autofix.ci # needed to securely identify the workflow
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  autofix:
+    name: Autofix
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Git repository
+        uses: actions/checkout@v6
+
+      - name: Install Fish shell
+        uses: fish-shop/install-fish-shell@v2
+
+      - name: Fix formatting
+        run: fish_indent --write **/*.fish
+
+      - name: Run autofix.ci
+        uses: autofix-ci/action@v1
+        with:
+          commit-message: "refactor: apply automatic fixes"
