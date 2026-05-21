@@ -6,11 +6,15 @@ Learn how to use CLI apps.
 
 ![A screenshot of `how` being used inside a terminal](./demo.png)
 
+## Installation
+
+Using [Fisher](https://github.com/jorgebucaran/fisher):
+
+```fish
+fisher install jonahsnider/how
+```
+
 ## Usage
-
-You can install `how` by downloading the latest binary from the [releases page](https://github.com/jonahsnider/how/releases/latest).
-
-Once installed and added to your path, you can use it like this:
 
 ```sh
 how <app>
@@ -22,4 +26,18 @@ Learn how to use `tar`:
 
 ```sh
 how tar
+```
+
+### Configuration
+
+The markdown renderer is auto-detected in this order: [glow](https://github.com/charmbracelet/glow) > [leaf](https://leaf.rivolink.mg/) > [bat](https://github.com/sharkdp/bat) > `cat`. To override:
+
+```fish
+set -Ux HOW_RENDERER glow
+```
+
+To change the cache directory (default `~/.cache/how`):
+
+```fish
+set -Ux HOW_CACHE_DIR ~/my/custom/path
 ```
