@@ -1,0 +1,18 @@
+function __how_help
+    echo "Usage: how <command>"
+    echo ""
+    echo "Learn how to use a CLI app"
+    echo ""
+    echo "Examples:"
+    echo "  how tar"
+    echo "  how view tar"
+    echo "  how refresh"
+    echo ""
+    echo "Commands:"
+    echo "  view      Learn how to use a CLI app"
+    echo "  refresh   Refresh the downloaded knowledge base"
+    echo ""
+    echo "Options:"
+    echo "  -v, --version  Show version"
+    echo "  -h, --help     Show help"
+end

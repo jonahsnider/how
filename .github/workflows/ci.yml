@@ -3,47 +3,69 @@ name: CI
 on: [push, pull_request]
 
 jobs:
-  build:
-    name: Build
-
+  check-syntax:
+    name: Check syntax
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout git repository
-        uses: actions/checkout@v6
-      - name: Set up Go
-        uses: actions/setup-go@v6
-        with:
-          go-version-file: "./go.mod"
-      - name: Compile app
-        run: go build
+      - uses: actions/checkout@v6
+      - uses: fish-shop/install-fish-shell@v1
+      - name: Check syntax
+        run: fish -n {functions,completions,conf.d}/*.fish
+
   check-formatting:
     name: Check formatting
-
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout git repository
-        uses: actions/checkout@v6
-      - name: Set up Go
-        uses: actions/setup-go@v6
-        with:
-          go-version-file: "./go.mod"
+      - uses: actions/checkout@v6
+      - uses: fish-shop/install-fish-shell@v1
       - name: Check formatting
-        run: gofmt -l .
-  lint:
-    name: Lint
+        run: fish_indent --check {functions,completions,conf.d}/*.fish
 
+  smoke-test:
+    name: Smoke test
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout git repository
-        uses: actions/checkout@v6
-      - name: Set up Go
-        uses: actions/setup-go@v6
-        with:
-          go-version-file: "./go.mod"
-      - name: Lint
-        uses: golangci/golangci-lint-action@v9
-        with:
-          version: latest
+      - uses: actions/checkout@v6
+      - uses: fish-shop/install-fish-shell@v1
+      - name: Source plugin
+        run: |
+          fish -c '
+            source conf.d/how.fish
+            for f in functions/*.fish
+              source $f
+            end
+
+            echo "=== how --version ==="
+            how --version
+
+            echo "=== how --help ==="
+            how --help
+
+            echo "=== how tar ==="
+            set -g HOW_RENDERER cat
+            how tar
+
+            echo "=== how nonexistent ==="
+            how does_not_exist_xyz; or echo "exit: $status (expected)"
+          '
+      - name: Verify output
+        run: |
+          fish -c '
+            source conf.d/how.fish
+            for f in functions/*.fish
+              source $f
+            end
+
+            set -g HOW_RENDERER cat
+
+            set -l output (how tar)
+            string match -q "*tar*" $output; or begin
+              echo "FAIL: output missing tar header"
+              exit 1
+            end
+            string match -q "*archive*" $output; or string match -qi "*archiv*" $output; or begin
+              echo "FAIL: output missing archive description"
+              exit 1
+            end
+            echo "PASS: how tar output looks correct"
+          '

@@ -2,6 +2,6 @@
 	"recommendations": [
 		"editorconfig.editorconfig",
 		"esbenp.prettier-vscode",
-		"golang.go"
+		"ndonfris.fish-lsp"
 	]
 }
