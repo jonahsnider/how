@@ -9,8 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: fish-shop/install-fish-shell@v2
-      - name: Check syntax
-        run: fish -n {functions,completions,conf.d}/*.fish
+      - uses: fish-shop/syntax-check@v2
 
   check-formatting:
     name: Check formatting
@@ -18,8 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: fish-shop/install-fish-shell@v2
-      - name: Check formatting
-        run: fish_indent --check {functions,completions,conf.d}/*.fish
+      - uses: fish-shop/indent-check@v2
 
   smoke-test:
     name: Smoke test
