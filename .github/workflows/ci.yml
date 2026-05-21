@@ -19,51 +19,16 @@ jobs:
       - uses: fish-shop/install-fish-shell@v2
       - uses: fish-shop/indent-check@v2
 
-  smoke-test:
-    name: Smoke test
+  test:
+    name: Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
       - uses: fish-shop/install-fish-shell@v2
-      - name: Source plugin
-        run: |
-          fish -c '
-            source conf.d/how.fish
-            for f in functions/*.fish
-              source $f
-            end
-
-            echo "=== how --version ==="
-            how --version
-
-            echo "=== how --help ==="
-            how --help
-
-            echo "=== how tar ==="
-            set -g HOW_RENDERER cat
-            how tar
-
-            echo "=== how nonexistent ==="
-            how does_not_exist_xyz; or echo "exit: $status (expected)"
-          '
-      - name: Verify output
-        run: |
-          fish -c '
-            source conf.d/how.fish
-            for f in functions/*.fish
-              source $f
-            end
-
-            set -g HOW_RENDERER cat
-
-            set -l output (how tar)
-            string match -q "*tar*" $output; or begin
-              echo "FAIL: output missing tar header"
-              exit 1
-            end
-            string match -q "*archive*" $output; or string match -qi "*archiv*" $output; or begin
-              echo "FAIL: output missing archive description"
-              exit 1
-            end
-            echo "PASS: how tar output looks correct"
-          '
+      - uses: fish-shop/install-plugin@v2
+        with:
+          plugin-manager: fisher
+          plugins: .
+      - uses: fish-shop/run-fishtape-tests@v2
+        with:
+          patterns: tests/**.fish
