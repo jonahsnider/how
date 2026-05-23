@@ -5,7 +5,7 @@ function __how_render
         case glow
             glow -
         case leaf
-            leaf -
+            leaf --inline
         case bat
             bat -l markdown --plain --paging never
         case '*'
