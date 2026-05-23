@@ -14,6 +14,12 @@ Using [Fisher](https://github.com/jorgebucaran/fisher):
 fisher install jonahsnider/how
 ```
 
+Using [Homebrew](https://brew.sh/):
+
+```sh
+brew install jonahsnider/tap/how
+```
+
 ## Usage
 
 ```sh
