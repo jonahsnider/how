@@ -3,7 +3,7 @@ function how -d "Learn how to use a CLI app"
     or return
 
     if set -q _flag_version
-        echo "how v4.0.0" # x-release-please-version
+        echo "how v4.0.1" # x-release-please-version
         return 0
     end
 
