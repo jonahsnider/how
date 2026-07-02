@@ -9,6 +9,7 @@ jobs:
   autofix:
     name: Autofix
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout Git repository
         uses: actions/checkout@v6
