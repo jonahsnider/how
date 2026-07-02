@@ -12,7 +12,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Checkout Git repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Install Fish shell
         uses: fish-shop/install-fish-shell@v2
