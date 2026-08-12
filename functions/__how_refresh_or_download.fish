@@ -14,6 +14,7 @@ function __how_refresh_or_download
     set -l age (math "$now - $mtime")
 
     if test "$age" -gt "$max_age"
-        __how_force_refresh
+        __how_force_refresh &>/dev/null &
+        disown
     end
 end
