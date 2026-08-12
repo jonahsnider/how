@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.1.0](https://github.com/jonahsnider/how/compare/v4.0.1...v4.1.0) (2026-08-12)
+
+
+### Features
+
+* refresh knowledge base in background ([458199e](https://github.com/jonahsnider/how/commit/458199e053ed20a577f393a4a9db391a350ad27a))
+
+
+### Bug Fixes
+
+* fix marker file mtime on macOS ([af0b0c7](https://github.com/jonahsnider/how/commit/af0b0c784773754d721d3398ce6e5f4f9d8d280b))
+
 ## [4.0.1](https://github.com/jonahsnider/how/compare/v4.0.0...v4.0.1) (2026-05-23)
 
 
