@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.1](https://github.com/jonahsnider/how/compare/v4.1.0...v4.1.1) (2026-08-20)
+
+
+### Bug Fixes
+
+* fix background knowledge base refreshes ([b292e64](https://github.com/jonahsnider/how/commit/b292e64b5111cf88790a581eee0a20e5843b10e9))
+
 ## [4.1.0](https://github.com/jonahsnider/how/compare/v4.0.1...v4.1.0) (2026-08-12)
 
 
