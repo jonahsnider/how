@@ -3,24 +3,6 @@ name: CI
 on: [push, pull_request]
 
 jobs:
-  check-syntax:
-    name: Check syntax
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v7
-      - uses: fish-shop/install-fish-shell@v2
-      - uses: fish-shop/syntax-check@v2
-
-  check-formatting:
-    name: Check formatting
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v7
-      - uses: fish-shop/install-fish-shell@v2
-      - uses: fish-shop/indent-check@v2
-
   test:
     name: Test
     runs-on: ubuntu-latest
@@ -32,6 +14,9 @@ jobs:
         with:
           plugin-manager: fisher
           plugins: .
-      - uses: fish-shop/run-fishtape-tests@v2
-        with:
-          patterns: tests/**.fish
+      - parallel:
+          - uses: fish-shop/syntax-check@v2
+          - uses: fish-shop/indent-check@v2
+          - uses: fish-shop/run-fishtape-tests@v2
+            with:
+              patterns: tests/**.fish
