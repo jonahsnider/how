@@ -8,15 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v7
-      - uses: fish-shop/install-fish-shell@v2
-      - uses: fish-shop/install-plugin@v2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: fish-shop/install-fish-shell@1ba366f90eef99b5a3e3a2e73e362d9248f39a3a # v2
+      - uses: fish-shop/install-plugin@bb83d00a1b57aa09fffc7c324c5bca966f298885 # v2
         with:
           plugin-manager: fisher
           plugins: .
       - parallel:
-          - uses: fish-shop/syntax-check@v2
-          - uses: fish-shop/indent-check@v2
-          - uses: fish-shop/run-fishtape-tests@v2
+          - uses: fish-shop/syntax-check@9402e71dcb912468100c55379431ca55a3f45843 # v2
+          - uses: fish-shop/indent-check@8e0cc3b86335b0927756169f4b8fcafcec962f79 # v2
+          - uses: fish-shop/run-fishtape-tests@de5af34466faa5c1eb73465dd84fd1f0998f69b6 # v2
             with:
               patterns: tests/**.fish
