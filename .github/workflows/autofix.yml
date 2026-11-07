@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
       - name: Install Fish shell
-        uses: fish-shop/install-fish-shell@c7854a53788db0cf0ac377b7320e6814b6078d3f # v2
+        uses: fish-shop/install-fish-shell@6457fc454bc52bcd0e657eeb5b3c5ba41ae8ad3e # v2
 
       - name: Fix formatting
         run: fish_indent --write **/*.fish
