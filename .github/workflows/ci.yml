@@ -17,6 +17,6 @@ jobs:
       - parallel:
           - uses: fish-shop/syntax-check@3a54bf1d05cbcb385ee49fa581eca0df7f496112 # v2
           - uses: fish-shop/indent-check@92975460e948f1d9dd93f542491706ec4d541ff9 # v2
-          - uses: fish-shop/run-fishtape-tests@43b770376992aab239e54af2dd4f61f21a1ba571 # v2
+          - uses: fish-shop/run-fishtape-tests@9415136a0e3486347ce6dd8fb982d37db1ed070d # v2
             with:
               patterns: tests/**.fish
