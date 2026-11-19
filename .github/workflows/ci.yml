@@ -9,7 +9,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
-      - uses: fish-shop/install-fish-shell@6457fc454bc52bcd0e657eeb5b3c5ba41ae8ad3e # v2
+      - uses: fish-shop/install-fish-shell@b93ff71cb0566d1d461927fd0f182ae7a777a8d6 # v2
       - uses: fish-shop/install-plugin@3d86cc2f1c2c71250716eed27875976c38155b62 # v2
         with:
           plugin-manager: fisher
