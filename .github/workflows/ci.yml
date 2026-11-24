@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
       - uses: fish-shop/install-fish-shell@31111fa6eb327c8cab72ea9b3b7cca4c27b9c076 # v2
-      - uses: fish-shop/install-plugin@39273f573fdcbb30892834e1d5b75e3727b10d03 # v2
+      - uses: fish-shop/install-plugin@55eea954f2aed8bb0fbb16cd3ff24abd3dffbe78 # v2
         with:
           plugin-manager: fisher
           plugins: .
