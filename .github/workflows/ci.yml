@@ -15,7 +15,7 @@ jobs:
           plugin-manager: fisher
           plugins: .
       - parallel:
-          - uses: fish-shop/syntax-check@e73305a5340afe528f22242e1648db241279f9d4 # v2
+          - uses: fish-shop/syntax-check@4b4b90a05c6b7063e07ff8c3e2e67e928a4db9f6 # v2
           - uses: fish-shop/indent-check@624a767d056d069e790618bf1024c45c5cd9edea # v2
           - uses: fish-shop/run-fishtape-tests@10f221910ba27a421af41eb7c67ad3c480353fe7 # v2
             with:
